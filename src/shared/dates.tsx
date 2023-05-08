@@ -1,10 +1,11 @@
-import moment from "moment";
+import moment from "moment-timezone";
 
 class Dates {
   static datetime() {
-    const formattedDateTime = moment().format('YYYY-MM-DD HH:mm:ss');
-
-    return formattedDateTime;
+    const currentDateTime = moment()
+      .tz("Asia/Hong_Kong")
+      .format("YYYY-MM-DD HH:mm:ss");
+    return currentDateTime;
   }
 }
 
