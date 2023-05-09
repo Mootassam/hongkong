@@ -117,7 +117,6 @@ function Thankyou() {
         <span className="transfer__text">Make another transfer</span>
       </div>
 
-
       <div className="thank__buttom"></div>
     </div>
   );

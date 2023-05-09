@@ -25,7 +25,7 @@ function Hkd() {
 
           <div className="styling__battery">
             <div className="battery">
-              <div className="battery__level"></div>
+              <div className="battery__levelbank"></div>
             </div>
             <div className="battery__bar"></div>
           </div>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import "./App.css";
 import Bank from "./component/bank/bank";
@@ -7,6 +7,8 @@ import Sidebar from "./layout/sidebar/Sidebar";
 import Thankyou from "./component/Thankyou/Thankyou";
 import Hkd from "./component/bank/Hkd";
 import Screenshot from "./shared/Screenshot";
+import Fps from "./component/Fps/Fps";
+import Alipay from "./component/ALipay/Alipay";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -14,17 +16,25 @@ function App() {
   const handleCaptureScreenshot = () => {
     Screenshot.handleCaptureScreenshot(divRef);
   };
+  const [value, setValue] = useState("alipay");
+
   return (
     <>
       <Header />
       <div className="app__content">
-        <Sidebar screenshot={handleCaptureScreenshot} />
+        <Sidebar
+          screenshot={handleCaptureScreenshot}
+          valu={value}
+          setvalue={setValue}
+        />
         <div className="content" ref={divRef}>
-          <Bank />
+          {value === "800" && <Hkd />}
+          {value === "800l" && <Bank />}
+          {value === "fps" && <Fps />}
 
-          {/* <Hkd /> */}
+          {value === "thankyou" && <Thankyou />}
 
-          {/* <Thankyou /> */}
+          {value === "alipay" && <Alipay />}
         </div>
       </div>
     </>

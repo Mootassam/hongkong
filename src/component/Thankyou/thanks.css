@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 .app__thankyou {
   width: 381px;
@@ -199,9 +200,10 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 15px;
-  letter-spacing: 0.04em;
+  font-size: 14px;
+  line-height: 112.19%;
+  /* identical to box height, or 16px */
+
   color: #353535;
 }
 
@@ -209,12 +211,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-family: "Inter";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 13.2px;
-  line-height: 16px;
-  /* identical to box height */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 112.19%;
+  /* identical to box height, or 16px */
+
+  letter-spacing: 0.03em;
+
+  color: #000000;
+
   color: #353535;
 }
 
@@ -240,11 +247,11 @@
   display: flex !important;
   flex-direction: row;
   gap: 2px;
-  font-family: "Inter";
+
   font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 112.19%;
   /* identical to box height */
   letter-spacing: 0.02em;
   color: #353535;
