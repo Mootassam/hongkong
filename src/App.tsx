@@ -9,6 +9,9 @@ import Hkd from "./component/bank/Hkd";
 import Screenshot from "./shared/Screenshot";
 import Fps from "./component/Fps/Fps";
 import Alipay from "./component/ALipay/Alipay";
+import Pay from "./component/Pay/Pay";
+import LiviBank from "./component/Livi/LiviBank";
+import BankChina from "./component/bankchina/BankChina";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -35,6 +38,11 @@ function App() {
           {value === "thankyou" && <Thankyou />}
 
           {value === "alipay" && <Alipay />}
+
+          {value === "pay" && <Pay />}
+
+          {value === "livi" && <LiviBank />}
+          {value === "BankChina" && <BankChina />}
         </div>
       </div>
     </>
