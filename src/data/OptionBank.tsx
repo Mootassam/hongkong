@@ -10,6 +10,9 @@ const optionBank = [
   { name: "Pay", value: "pay" },
   { name: "livi", value: "livi" },
   { name: "BankChina", value: "BankChina" },
+  { name: "localbank", value: "localBank" },
+  { name: "localbanksmall", value: "small" },
+  {name:"Review", value:"review"}
 ];
 
 export default optionBank;
