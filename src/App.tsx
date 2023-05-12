@@ -15,6 +15,10 @@ import BankChina from "./component/bankchina/BankChina";
 import LocalTransfer from "./component/LocalTransfer/LocalTransfer";
 import SmallTransfer from "./component/SmallTransfer/SmallTransfer";
 import Review from "./component/Review/Review";
+import Hangseng from "./component/Hangseng/Hangseng";
+import Fly from "./component/Fly1/Fly";
+import Scpay from "./component/scpay/Scpay";
+import Chan from "./component/chanBank/Chan";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -45,6 +49,10 @@ function App() {
           {value === "localBank" && <LocalTransfer />}
           {value === "small" && <SmallTransfer />}
           {value ==="review" && <Review />}
+          {value ==="hangseng" && <Hangseng />}
+          {value ==='fly1' && <Fly />}
+          {value === 'scpay' && <Scpay /> }
+          {value === "chan" && <Chan />}
         </div>
       </div>
     </>

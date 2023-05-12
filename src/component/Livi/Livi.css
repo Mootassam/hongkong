@@ -180,14 +180,16 @@
   align-items: baseline;
 }
 .livi__totalAmount {
-  font-family: "Roboto";
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: bolder;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 24px;
   line-height: 29px;
-  letter-spacing: 0.04em;
-
+  /* identical to box height */
+  
+  
   color: #434343;
+  
 }
 
 .currency__livi {
