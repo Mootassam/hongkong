@@ -21,7 +21,6 @@ import Chan from "./component/chanBank/Chan";
 import Fly2 from "./component/Fly2/Fly2";
 import Fly3 from "./component/Fly3/Fly3";
 
-import { useScreenshot } from 'use-react-screenshot'
 
 
 function App() {
@@ -31,8 +30,7 @@ function App() {
     Screenshot.handleCaptureScreenshot(divRef);
   };
   const [value, setValue] = useState("alipay");
-  
-  const [image, takeScreenshot] = useScreenshot()
+
  
 
   return (

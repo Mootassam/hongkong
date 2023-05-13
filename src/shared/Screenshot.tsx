@@ -1,5 +1,4 @@
 import html2canvas from "html2canvas";
-import domtoimage from 'dom-to-image';
 
 class Screenshot {
   static handleCaptureScreenshot(divRef: any) {
