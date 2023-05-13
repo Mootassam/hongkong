@@ -40,21 +40,28 @@ function Alipay() {
                 <div className="alipay__amoutn">200.00</div>
               </div>
 
-              <div className="alipay__bar"></div>
+              <div className="alipay__bar">
+
+
+              </div>
               <div className="">
                 <div className="alipay__address">
                   <div className="alipaydetail__left">轉賬至</div>
                   <div className="alipaydetail__right">Mox Bank</div>
                 </div>
 
-                <div className="inside__bar"></div>
+                <div className="inside__bar">
+                  <img src="/alipay/bar.png" alt=""  />
+                </div>
                 <div className="alipay__address">
                   <div className="alipaydetail__left">付款方式</div>
                   <div className="alipaydetail__right">
                     上海滙豐銀行有限公司 **** 0461
                   </div>
                 </div>
-                <div className="inside__bar"></div>
+                <div className="inside__bar">
+                  <img src="/alipay/bar.png" alt=""  />
+                </div>
 
                 <div className="alipay__address">
                   <div className="alipaydetail__left">手續費</div>

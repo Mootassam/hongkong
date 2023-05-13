@@ -10,7 +10,12 @@
 .form__group {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
+}
+
+.form__group > label {
+  font-family: "Inter";
+  font-size: 14px;
 }
 select {
   padding: 5px 10px;

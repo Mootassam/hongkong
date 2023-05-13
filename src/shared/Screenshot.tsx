@@ -1,10 +1,11 @@
 import html2canvas from "html2canvas";
+import domtoimage from 'dom-to-image';
 
 class Screenshot {
   static handleCaptureScreenshot(divRef: any) {
     if (divRef.current) {
       html2canvas(divRef.current, {
-        scale: 10,
+        scale: 2,
         useCORS: true,
         allowTaint: true,
       }).then((canvas) => {

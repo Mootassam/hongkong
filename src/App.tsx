@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState,useEffect } from "react";
 
 import "./App.css";
 import Bank from "./component/bank/bank";
@@ -12,13 +12,17 @@ import Alipay from "./component/ALipay/Alipay";
 import Pay from "./component/Pay/Pay";
 import LiviBank from "./component/Livi/LiviBank";
 import BankChina from "./component/bankchina/BankChina";
-import LocalTransfer from "./component/LocalTransfer/LocalTransfer";
 import SmallTransfer from "./component/SmallTransfer/SmallTransfer";
 import Review from "./component/Review/Review";
 import Hangseng from "./component/Hangseng/Hangseng";
 import Fly from "./component/Fly1/Fly";
 import Scpay from "./component/scpay/Scpay";
 import Chan from "./component/chanBank/Chan";
+import Fly2 from "./component/Fly2/Fly2";
+import Fly3 from "./component/Fly3/Fly3";
+
+import { useScreenshot } from 'use-react-screenshot'
+
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -27,6 +31,9 @@ function App() {
     Screenshot.handleCaptureScreenshot(divRef);
   };
   const [value, setValue] = useState("alipay");
+  
+  const [image, takeScreenshot] = useScreenshot()
+ 
 
   return (
     <>
@@ -46,13 +53,14 @@ function App() {
           {value === "pay" && <Pay />}
           {value === "livi" && <LiviBank />}
           {value === "BankChina" && <BankChina />}
-          {value === "localBank" && <LocalTransfer />}
           {value === "small" && <SmallTransfer />}
           {value ==="review" && <Review />}
           {value ==="hangseng" && <Hangseng />}
           {value ==='fly1' && <Fly />}
           {value === 'scpay' && <Scpay /> }
           {value === "chan" && <Chan />}
+          {value ==="fly2" && <Fly2 />}
+          {value ==='fly3' && <Fly3 />}
         </div>
       </div>
     </>
