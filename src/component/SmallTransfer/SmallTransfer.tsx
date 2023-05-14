@@ -19,7 +19,8 @@ function SmallTransfer() {
       <div className="smalltransfer__content">
         <div className="title__acknwledgment">Acknowledgment</div>
       </div>
-      <div className="transfer__bar"></div>
+
+      <img src="/completed/barlong.png" alt="" />
 
       <div className="small__transcationcompleted">
         <div className="completedcirlce">
@@ -42,7 +43,7 @@ function SmallTransfer() {
           <span>Favourite payee</span>
         </div>
         <div>
-          <img src="/completed/barh.png" alt=""  />
+          <img src="/completed/barh.png" alt="" />
         </div>
         <div>
           <span>Save image</span>
@@ -61,6 +62,8 @@ function SmallTransfer() {
           <span>105053599</span>
         </div>
       </div>
+
+      <img src="/completed/bar.png" className="small__bar" alt="" />
       <div className="receiving__bank">
         <div className="to__left">
           <span>Receiving bank</span>
@@ -70,6 +73,7 @@ function SmallTransfer() {
           <span>Recipient default bank</span>
         </div>
       </div>
+      <img src="/completed/bar.png" className="small__bar" alt="" />
 
       <div className="from__bank">
         <div className="to__left">
@@ -93,6 +97,9 @@ function SmallTransfer() {
         </div>
       </div>
 
+
+      <img src="/completed/bar.png" alt="" className="small__bar" />
+
       <div className="detaill__completed">
         <div className="completd__left">
           <span className="bank__left"> Transfer on</span>
@@ -101,6 +108,7 @@ function SmallTransfer() {
           <span className="bank__right"> Now 07/03/2023</span>
         </div>
       </div>
+      <img src="/completed/bar.png" className="small__bar" alt="" />
 
       <div className="detaill__completeds __smallspace">
         <div className="bank__right __message">
@@ -109,6 +117,7 @@ function SmallTransfer() {
         </div>
         <div>-</div>
       </div>
+      <img src="/completed/bar.png"  className="small__bar" alt="" />
 
       <div className="detaill__mynotes">
         <div className="bank__right">My notes</div>

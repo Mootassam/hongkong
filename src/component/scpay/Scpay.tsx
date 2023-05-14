@@ -9,26 +9,21 @@ function Scpay() {
           <img src="scpay/close.png" alt="" width={25} height={26} />
         </div>
       </div>
-
       <div className="scpay__logo">
         <img src="/scpay/logo.png" alt="" width={387} />
       </div>
-
       <div className="scpay__content">
         <label className="fscpay__title">此款項已成功轉賬至收款人</label>
-
         <div className="fscpay__">
           <span className="chinesetext">您已轉賬 港幣</span>
           <span className="number__text">88.00元</span>&nbsp;
           <span className="chinesetext"> 給</span>&nbsp;
           <span className="englishtext">CHAN T**** M***</span>
         </div>
-
         <div className="scpay__number">+852-98888888</div>
-
         <div className="detail__scapy">
           <div className="scapy__detail">
-            您可以前往 「付款及交易纪錄」 以查閱交易纪錄{" "}
+            您可以前往 「付款及交易纪錄」 以查閱交易纪錄
           </div>
           <div className="scapy__detail">
             參考編號 &nbsp;&nbsp;&nbsp;&nbsp; 2212-241656860200
@@ -65,14 +60,11 @@ function Scpay() {
         </div>
 
         <div className="point__interegation">
-<div></div>
+          <div></div>
 
-<div>
-<img src="/scpay/interregation.png" alt="" width={24}  height={24} />
-</div>
-
-
-
+          <div>
+            <img src="/scpay/interregation.png" alt="" width={24} height={24} />
+          </div>
         </div>
 
         <div className="scpay__button">

@@ -3,8 +3,9 @@
 
 .app__thankyou {
   width: 381px;
-  height: 822px;
+  height: 815px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .left__ {
@@ -138,12 +139,6 @@
   position: absolute;
   z-index: 2;
 }
-.header__bar {
-  margin-top: 10px;
-  width: 380px;
-  height: 0px;
-  border: 0.8px solid #dddddd;
-}
 
 .thankyou__circle {
   display: flex;
@@ -247,14 +242,13 @@
   display: flex !important;
   flex-direction: row;
   gap: 2px;
-
   font-style: normal;
-  font-weight: 500;
+
   font-size: 14px;
   line-height: 112.19%;
   /* identical to box height */
   letter-spacing: 0.02em;
-  color: #353535;
+  color: #111111;
 }
 .__date {
   font-family: "Inter";
@@ -279,11 +273,11 @@
 .information__ {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 15px;
 
-  color: #0f0f0f;
+  color: #141414 !important;
   padding-left: 15px;
 }
 
@@ -337,4 +331,20 @@
   height: 4px;
   background: #000000;
   border-radius: 2px;
+}
+
+.button__tranfer {
+  position: relative;
+  top: -20px;
+  display: grid;
+  place-items: center;
+  width: 381px;
+  height: 94px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.__thank__date {
+  padding-bottom: -9px;
 }

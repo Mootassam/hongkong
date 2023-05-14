@@ -38,6 +38,23 @@
   color: #000000;
 }
 
+.alipy__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+
+.alipy__bottom > img { 
+  padding-bottom: 8px;
+}
+
 .alipay__footer {
   position: absolute;
   left: 0;
@@ -139,7 +156,7 @@ stlying the alipay  content  */
 .alipay__background {
   margin-top: 13px;
   width: 341px;
-  height: 336px;
+  padding-bottom: 13px;
 
   background: #ffffff;
   border-radius: 14px;
@@ -239,7 +256,6 @@ stlying the alipay  content  */
 }
 .background__title {
   width: 181.53px;
-  height: 17.02px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -272,7 +288,7 @@ stlying the alipay  content  */
 }
 
 .background__amount {
-  padding-top: 19px;
+  padding-top: 17px;
   display: flex;
   align-items: baseline;
 }
@@ -347,5 +363,4 @@ stlying the alipay  content  */
 }
 
 .inside__bar {
-
 }

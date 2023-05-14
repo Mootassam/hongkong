@@ -20,6 +20,7 @@ import Scpay from "./component/scpay/Scpay";
 import Chan from "./component/chanBank/Chan";
 import Fly2 from "./component/Fly2/Fly2";
 import Fly3 from "./component/Fly3/Fly3";
+import Blue from "./component/Blue/Blue";
 
 
 
@@ -59,6 +60,7 @@ function App() {
           {value === "chan" && <Chan />}
           {value ==="fly2" && <Fly2 />}
           {value ==='fly3' && <Fly3 />}
+          {value ==="blue"  && <Blue />}
         </div>
       </div>
     </>

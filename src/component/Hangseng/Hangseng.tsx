@@ -89,7 +89,7 @@ function Hangseng() {
         <div className="hangseng__right">
           <div className="hangseng__right hangseng__amount">
             <span className="hagseng__text">即時</span>
-            <span className="number__ __date">14/03/2023</span>
+            <span className="number__ __datew">14/03/2023</span>
           </div>
         </div>
       </div>

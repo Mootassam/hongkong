@@ -61,10 +61,7 @@ function BankChina() {
           <div className="china__left">轉賬日期</div>
           <div className="china__right __specialfont ">即時</div>
         </div>
-        <div className="contentchina__detail normalspace">
-          <div className="china__left">轉賬日期</div>
-          <div className="china__right __specialfont ">即時</div>
-        </div>
+
         <div className="contentchina__detail normalspace">
           <div className="china__left">轉賬編號</div>
           <div className="china__right __normalfont ">12230313F285244203</div>

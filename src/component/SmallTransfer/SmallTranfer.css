@@ -109,7 +109,6 @@
   padding: 15px 0 15px;
   border-bottom: 2px solid #e7e7e7;
   padding-left: 6px;
-  
 }
 .pay__receieved > span {
   font-family: "Roboto";
@@ -129,9 +128,11 @@
 /* styling the to__right */
 
 .completed__to {
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   justify-content: space-between;
-  padding: 18px 15px 16px 14px;
 }
 
 .to__left > span {
@@ -140,7 +141,6 @@
   font-weight: 400;
   font-size: 12.3px;
   line-height: 14px;
-
   color: #494949;
 }
 
@@ -172,12 +172,11 @@
   color: #3a3a3a;
 }
 .receiving__bank {
-  padding: 17px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #e7e7e7;
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 14px;
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #e7e7e7;
 }
 
 .bank__right {
@@ -191,15 +190,20 @@
 }
 
 .from__bank {
+  padding-top: 15px;
   display: flex;
   justify-content: space-between;
-  padding: 15px 14px 16px 15px;
 }
 
 .bank__right {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.small__bar {
+  padding-top: 16px;
+  display: flex;
 }
 
 .bank__right > span:nth-child(1) {
@@ -227,21 +231,14 @@
 .detaill__completed {
   display: flex;
   justify-content: space-between;
-  padding-top: 17px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid #e7e7e7;
-  height: 49.6px;
-  margin: 0 15px 0 13.5px;
 }
 
-.detaill__completeds { 
+.detaill__completeds {
+  padding-top: 16px;
+  padding-left: 14px;
+  padding-right: 15px;
   display: flex;
   justify-content: space-between;
-  padding-top: 17px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid #e7e7e7;
-  height: 49.6px;
-  margin: 0 15px 0 13.5px;
 }
 .bank__left {
   font-family: "Roboto";
@@ -336,9 +333,8 @@
 
 .app__favourite {
   display: flex;
-  padding-top: 12px;
   justify-content: space-around;
-  padding-bottom: 13.5px;
+  align-items: center;
 }
 
 .app__favourite span {

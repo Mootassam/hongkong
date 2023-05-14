@@ -40,10 +40,7 @@ function Alipay() {
                 <div className="alipay__amoutn">200.00</div>
               </div>
 
-              <div className="alipay__bar">
-
-
-              </div>
+              <div className="alipay__bar"></div>
               <div className="">
                 <div className="alipay__address">
                   <div className="alipaydetail__left">轉賬至</div>
@@ -51,7 +48,7 @@ function Alipay() {
                 </div>
 
                 <div className="inside__bar">
-                  <img src="/alipay/bar.png" alt=""  />
+                  <img src="/alipay/bar.png" alt="" />
                 </div>
                 <div className="alipay__address">
                   <div className="alipaydetail__left">付款方式</div>
@@ -60,7 +57,7 @@ function Alipay() {
                   </div>
                 </div>
                 <div className="inside__bar">
-                  <img src="/alipay/bar.png" alt=""  />
+                  <img src="/alipay/bar.png" alt="" />
                 </div>
 
                 <div className="alipay__address">
@@ -85,7 +82,15 @@ function Alipay() {
           </div>
         </div>
 
-        <div className="alipay__footer"></div>
+
+
+<div className="alipy__bottom">
+  <img src="/alipay/print.png" alt=""  />
+  <div className="alipay__footer">
+
+</div>
+</div>
+ 
       </div>
     </div>
   );

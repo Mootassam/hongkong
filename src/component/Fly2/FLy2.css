@@ -15,12 +15,9 @@
   height: 715px;
   background: #ffffff;
   position: relative;
- 
   overflow: hidden;
 }
-.shadow-effect  
-
-.description__fly2 {
+.shadow-effect .description__fly2 {
   background-color: #ffffff;
 }
 
@@ -133,3 +130,8 @@
   flex-direction: column;
   gap: 13px;
 }
+
+.blue__detaill {
+  padding-left: 29px;
+}
+

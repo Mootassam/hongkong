@@ -8,6 +8,11 @@ function Pay() {
           <div className="pay__time">4:07</div>
         </div>
         <div className="pay__right">
+      
+
+     
+
+
           <div className="pay__battery">
             <label htmlFor="">98%</label>
             <div className="battery__pay">
@@ -22,7 +27,11 @@ function Pay() {
         <div className="button__back">
           <img src="/pay/back.png" alt="" width={18} />
         </div>
-        <div className="button__casque"></div>
+        <div className="button__casque">
+
+        <img src="/pay/casque.png" alt="" width={18} />
+
+        </div>
       </div>
 
       <div className="pay__content">
@@ -34,7 +43,9 @@ function Pay() {
         <div className="pay__reference">Reference no.2307909165976</div>
 
         <div className="pay__message">
-          <div className="message__circle"></div>
+          <div className="message__circle">
+            <img src="/pay/check.png" alt="" width={9} />
+          </div>
           <div className="message__detail">
             <span>Payment has been successfully </span>
             <span>transferred to the payee</span>

@@ -33,7 +33,7 @@ function Thankyou() {
         <div className="confirmation__name">Confirmation</div>
       </div>
 
-      <div className="header__bar"></div>
+      <img src="/thank/bar.png" alt="" />
 
       <div className="thankyou__content">
         <div className="thankyou__circle">
@@ -55,7 +55,9 @@ function Thankyou() {
           </div>
         </div>
 
-        <div className="thankyou__bar"></div>
+
+<img src="/thank/smallbar.png" />
+
 
         <div className="thankyou__to">
           <div className="address__left">To</div>
@@ -64,7 +66,8 @@ function Thankyou() {
             <div>FPS ID: 105430979</div>
           </div>
         </div>
-        <div className="thankyou__bar"></div>
+
+        <img src="/thank/smallbar.png" />
 
         <div className="thankyou__amount">
           <div className="address__left">Amount</div>
@@ -73,22 +76,24 @@ function Thankyou() {
             <div>HKD</div>
           </div>
         </div>
-        <div className="thankyou__bar"></div>
+
+        <img src="/thank/smallbar.png" />
         <div className="thankyou__amount">
           <div className="address__left">Fees</div>
           <div className="address__right _amount">
             <div>Waived</div>
           </div>
         </div>
-        <div className="thankyou__bar"></div>
+
+        <img src="/thank/smallbar.png" />
         <div className="thankyou__amount">
           <div className="address__left">Transfer date</div>
           <div className="address__right _amount">
             <div>Now</div>
           </div>
         </div>
-        <div className="thankyou__bar"></div>
 
+        <img src="/thank/smallbar.png" />
         <div className="thankyou__amount">
           <div className="address__left">Reference number</div>
           <div className="address__right _amount">
@@ -96,10 +101,11 @@ function Thankyou() {
           </div>
         </div>
 
-        <div className="thankyou__bar"></div>
-        <div className="thankyou__amount __date">
+        <img src="/thank/smallbar.png" />
+
+        <div className="thankyou__amount __thank__date">
           <div className="address__left">Date and time</div>
-          <div className="address__right __date">
+          <div className="address__right">
             <div>15 Mar 2023</div>
             <div>13:25 HKT</div>
           </div>
@@ -113,11 +119,11 @@ function Thankyou() {
         Service fees and processing time are subject to variation at
       </div>
 
-      <div className="service__transfer">
-        <span className="transfer__text">Make another transfer</span>
+      <div className="button__tranfer">
+        <div className="service__transfer">
+          <span className="transfer__text">Make another transfer</span>
+        </div>
       </div>
-
-      <div className="thank__buttom"></div>
     </div>
   );
 }
