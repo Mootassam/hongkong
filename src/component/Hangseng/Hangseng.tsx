@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hangseng.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Hangseng(props) {
   return (
     <div className="hang__seng">
@@ -114,7 +115,7 @@ function Hangseng(props) {
         <div className="hangseng__left">
           <label htmlFor="">交易編號</label>
         </div>
-        <div className="hangseng__right hd__number">HD12331476130365</div>
+        <div className="hangseng__right hd__number">HD1{Dates.hangseng()}76{Number.genrateRandom6Number()}</div>
       </div>
     </div>
   );

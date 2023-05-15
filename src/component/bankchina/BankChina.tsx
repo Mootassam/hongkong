@@ -1,6 +1,7 @@
 import React from "react";
 import "./bankChina.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function BankChina(props) {
   return (
     <div className="app__china">
@@ -65,7 +66,7 @@ function BankChina(props) {
 
         <div className="contentchina__detail normalspace">
           <div className="china__left">轉賬編號</div>
-          <div className="china__right __normalfont ">12230313F285244203</div>
+          <div className="china__right __normalfont ">12{Dates.generatedate()}F285{Number.genrateRandom6Number()}</div>
         </div>
       </div>
     </div>

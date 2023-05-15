@@ -1,6 +1,7 @@
 import React from "react";
 import "./bank.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Hkd(props) {
   return (
     <div className="app__hkd">
@@ -55,7 +56,7 @@ function Hkd(props) {
       <div className="hkd__address">
         <div>
           <div className="hkd__left">交易編號</div>
-          <div className="hkd__right">ENS2023031500108578</div>
+          <div className="hkd__right">ENS{Dates.generateRandomDateNumber()}00{Number.genrateRandom6Number()}</div>
         </div>
         <div>
           <div className="hkd__left">交易類型</div>

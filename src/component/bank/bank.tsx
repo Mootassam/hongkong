@@ -1,6 +1,7 @@
 import React from "react";
 import "./bank.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Bank(props) {
   return (
     <div className="app__bank">
@@ -21,7 +22,7 @@ function Bank(props) {
       <div className="bank__section">
         <div className="section__group">
           <div className="section__left">交易編號</div>
-          <div className="section__right">ENS2023031500108578</div>
+          <div className="section__right">ENS{Dates.generateRandomDateNumber()}00{Number.genrateRandom6Number()}</div>
         </div>
 
         <div className="section__group">

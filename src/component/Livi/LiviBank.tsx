@@ -1,6 +1,7 @@
 import React from "react";
 import "./Livi.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function LiviBank(props) {
   return (
     <div className="app__livi">
@@ -61,7 +62,8 @@ function LiviBank(props) {
                 Reference Number
               </label>
               <label htmlFor="" className="livi__reference">
-                202303130250100500001377079
+                {Dates.generateRandomDateNumber()}025010050000
+                {Number.generateRandom7Number()}
               </label>
             </div>
           </div>

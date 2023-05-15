@@ -1,11 +1,12 @@
 import React from "react";
 import "./Fly.css";
+import Dates from "../../shared/dates";
 function Fly(props) {
   return (
     <div className="app__fly">
       <div className="fly__header">
         <div className="fly__left">
-          <div className="fly__time">16:38</div>
+          <div className="fly__time">{Dates.currentTime()}</div>
         </div>
 
         <div className="fly__right">

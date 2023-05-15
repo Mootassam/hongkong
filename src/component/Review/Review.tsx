@@ -76,7 +76,7 @@ function Review(props) {
             </label>
           </div>
           <div className="reviewcontent__right">
-            <label htmlFor="">800.00</label>
+            <label htmlFor="">Waived</label>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ function Review(props) {
             </label>
           </div>
           <div className="reviewcontent__right">
-            <label htmlFor="">800.00</label>
+            <label htmlFor="">Now</label>
           </div>
         </div>
 

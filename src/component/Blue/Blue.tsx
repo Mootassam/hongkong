@@ -33,7 +33,7 @@ function Blue(props) {
           </div>
           <span className="blue__one">M<p style={{fontSize:30 ,letterSpacing: -2}}>•••</p></span>
           <div className="blue__lastdescription">
-            交易編號 MBKFT230316D084783{" "}
+            交易編號 MBKFT{Dates.generatedate()}D084783{" "}
           </div>
           <img src="/blue/bar.png" alt="" style={{ paddingTop: 42 }} />
         </div>

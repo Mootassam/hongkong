@@ -3,7 +3,6 @@ import moment from "moment";
 class Dates {
   static datetime() {
     const formattedDateTime = moment().format("YYYY-MM-DD HH:mm:ss");
-
     return formattedDateTime;
   }
 
@@ -51,6 +50,26 @@ class Dates {
     } 
     return formattedDate
   }
+
+
+  static generateRandomDateNumber() {
+    const currentDate = moment();
+    const formattedDate = currentDate.format('YYYYMMDD');
+    return formattedDate;
+  }
+
+  static generatedate(){ 
+    const date = moment().format('YYMMDD') 
+    return date
+  }
+
+  static hangseng(){ 
+    const date = moment().format('YYMDD') ;
+    return date;
+  }
+
+
+
 }
 
 export default Dates;

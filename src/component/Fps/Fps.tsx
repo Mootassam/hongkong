@@ -1,6 +1,7 @@
 import React from "react";
 import "./Fps.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Fps(props) {
   return (
     <div className="app__fps">
@@ -97,7 +98,10 @@ function Fps(props) {
               <div className="payee__name">
                 <div className="payment__left">Transfer No.</div>
                 <div className="payment__right __transfereno">
-                  <div>2002023031118650109</div>
+                  <div>
+                    200{Dates.generateRandomDateNumber()}
+                    {Number.generateRandom8Number()}
+                  </div>
                   <div>80791</div>
                 </div>
               </div>

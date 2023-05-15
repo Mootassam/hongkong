@@ -1,6 +1,7 @@
 import React from "react";
 import "./thanks.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Thankyou(props) {
   return (
     <div className="app__thankyou">
@@ -96,7 +97,7 @@ function Thankyou(props) {
         <div className="thankyou__amount">
           <div className="address__left">Reference number</div>
           <div className="address__right _amount">
-            <div>N31576499472</div>
+            <div>N31{Number.generateRandom9Number()}</div>
           </div>
         </div>
 

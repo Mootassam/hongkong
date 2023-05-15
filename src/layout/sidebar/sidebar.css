@@ -39,6 +39,13 @@ select {
   margin-top: 20px;
 }
 
-input  { 
+input {
   padding: 5px 10px;
+}
+
+.sidebar__form {
+  display: flex;
+  left: auto;
+  flex-direction: column;
+  gap: 20px;
 }

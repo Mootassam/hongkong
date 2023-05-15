@@ -1,0 +1,47 @@
+class Number {
+  static HongKong(amount) {
+    const hongkongCurrency = amount.toLocaleString("en-HK", {
+      style: "currency",
+      currency: "HKD",
+    });
+    console.log(hongkongCurrency);
+    return hongkongCurrency;
+  }
+
+  static generateRandom4Number() {
+    const min = 1000; // Minimum four-digit number (inclusive)
+    const max = 9999; // Maximum four-digit number (inclusive)
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
+
+  static generateRandom9Number() {
+    const min = 100000000;
+    const max = 999999999;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
+
+  static genrateRandom6Number() {
+    const min = 100000;
+    const max = 999999;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
+  static generateRandom8Number() {
+    const min = 10000000;
+    const max = 99999999;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
+
+  static generateRandom7Number(){ 
+
+    const min = 1000000;
+    const max = 9999999; 
+    const randomNumber  =  Math.floor(Math.random() * (max - min +1) ) + min;
+    return randomNumber
+
+  }
+}
+export default Number;

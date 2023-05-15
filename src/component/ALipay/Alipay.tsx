@@ -1,6 +1,8 @@
 import React from "react";
 import "./Alipay.css";
 import Dates from "../../shared/dates";
+import Names from "../../shared/Names";
+import Number from "../../shared/Number";
 function Alipay(props) {
   return (
     <div className="app__alipay">
@@ -33,12 +35,16 @@ function Alipay(props) {
               <div className="background__image">
                 <img src="/alipay/alipay.png" alt="" width={58} />
               </div>
-              <div className="background__title">已成功轉賬給 Yu Wai Ming</div>
+              <div className="background__title">
+                已成功轉賬給 Yu {Names.generateRandomFullNameFromHongKong()}
+              </div>
               <div className="background__subtitle">已支付</div>
 
               <div className="background__amount">
                 <div className="alipay__currency">HKD</div>
-                <div className="alipay__amoutn">{props.amount}</div>
+                <div className="alipay__amoutn">
+                  {props.amount}
+                </div>
               </div>
 
               <div className="alipay__bar"></div>
@@ -54,7 +60,7 @@ function Alipay(props) {
                 <div className="alipay__address">
                   <div className="alipaydetail__left">付款方式</div>
                   <div className="alipaydetail__right">
-                    上海滙豐銀行有限公司 **** 0461
+                    上海滙豐銀行有限公司 **** {Number.generateRandom4Number()}
                   </div>
                 </div>
                 <div className="inside__bar">
@@ -83,15 +89,10 @@ function Alipay(props) {
           </div>
         </div>
 
-
-
-<div className="alipy__bottom">
-  <img src="/alipay/print.png" alt=""  />
-  <div className="alipay__footer">
-
-</div>
-</div>
- 
+        <div className="alipy__bottom">
+          <img src="/alipay/print.png" alt="" />
+          <div className="alipay__footer"></div>
+        </div>
       </div>
     </div>
   );
