@@ -1,6 +1,6 @@
 import React from "react";
 import "./Review.css";
-function Review() {
+function Review(props) {
   return (
     <div className="app__review">
       <div className="review__header">
@@ -65,7 +65,7 @@ function Review() {
             </label>
           </div>
           <div className="reviewcontent__right">
-            <label htmlFor="">800.00</label>
+            <label htmlFor="">{props.amount}</label>
           </div>
         </div>
 

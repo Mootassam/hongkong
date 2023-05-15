@@ -1,11 +1,12 @@
 import React from "react";
 import "./thanks.css";
-function Thankyou() {
+import Dates from "../../shared/dates";
+function Thankyou(props) {
   return (
     <div className="app__thankyou">
       <div className="thankyou__header">
         <div className="header__battery">
-          <div className="left__">13:25</div>
+          <div className="left__">{Dates.currentTime()}</div>
 
           <div className="right__">
             <div className="right__data"></div>
@@ -55,9 +56,7 @@ function Thankyou() {
           </div>
         </div>
 
-
-<img src="/thank/smallbar.png" />
-
+        <img src="/thank/smallbar.png" />
 
         <div className="thankyou__to">
           <div className="address__left">To</div>
@@ -72,7 +71,7 @@ function Thankyou() {
         <div className="thankyou__amount">
           <div className="address__left">Amount</div>
           <div className="address__right _amount">
-            <div>800.00</div>
+            <div>{props.amount}</div>
             <div>HKD</div>
           </div>
         </div>
@@ -106,8 +105,8 @@ function Thankyou() {
         <div className="thankyou__amount __thank__date">
           <div className="address__left">Date and time</div>
           <div className="address__right">
-            <div>15 Mar 2023</div>
-            <div>13:25 HKT</div>
+            <div>{Dates.datethank()}</div>
+            <div>{Dates.currentTime()} HKT</div>
           </div>
         </div>
       </div>

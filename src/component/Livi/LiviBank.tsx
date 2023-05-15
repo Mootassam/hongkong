@@ -1,6 +1,7 @@
 import React from "react";
 import "./Livi.css";
-function LiviBank() {
+import Dates from "../../shared/dates";
+function LiviBank(props) {
   return (
     <div className="app__livi">
       <div className="livi">
@@ -13,7 +14,7 @@ function LiviBank() {
             <div className="livi__transferamount">
               <label htmlFor="">Transfer Amount</label>
               <label htmlFor="" className="livi__">
-                <div className="livi__totalAmount">200.00</div>
+                <div className="livi__totalAmount">{props.amount}</div>
                 <div className="currency__livi">HKD</div>
               </label>
             </div>
@@ -51,7 +52,7 @@ function LiviBank() {
                 Transaction Time
               </label>
               <label htmlFor="" className="livi__time">
-                13/03/2023 13:18
+                {Dates.lividate()}
               </label>
             </div>
 

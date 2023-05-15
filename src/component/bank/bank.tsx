@@ -1,7 +1,7 @@
 import React from "react";
 import "./bank.css";
 import Dates from "../../shared/dates";
-function Bank() {
+function Bank(props) {
   return (
     <div className="app__bank">
       <div className="bank__header">
@@ -10,7 +10,7 @@ function Bank() {
         <div className="header__amout">
           <div className="amount__cerruncy">HKD</div>
           <div className="app__amoutn">
-            <div className="amount__total">800.00</div>
+            <div className="amount__total">{props.amount}</div>
             <div className="amount__cr">CR</div>
           </div>
         </div>

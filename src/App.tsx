@@ -31,6 +31,8 @@ function App() {
     Screenshot.handleCaptureScreenshot(divRef);
   };
   const [value, setValue] = useState("alipay");
+  const [amount , setAmount] =useState(200)
+
 
  
 
@@ -42,25 +44,26 @@ function App() {
           screenshot={handleCaptureScreenshot}
           valu={value}
           setvalue={setValue}
+          setAmount={setAmount}
         />
         <div className="content" ref={divRef}>
-          {value === "800" && <Hkd />}
-          {value === "800l" && <Bank />}
-          {value === "fps" && <Fps />}
-          {value === "thankyou" && <Thankyou />}
-          {value === "alipay" && <Alipay />}
-          {value === "pay" && <Pay />}
-          {value === "livi" && <LiviBank />}
-          {value === "BankChina" && <BankChina />}
+          {value === "800" && <Hkd  amount={amount}/>}
+          {value === "800l" && <Bank  amount={amount} />}
+          {value === "fps" && <Fps  amount={amount}/>}
+          {value === "thankyou" && <Thankyou  amount={amount} />}
+          {value === "alipay" && <Alipay  amount={amount} />}
+          {value === "pay" && <Pay   amount={amount}/>}
+          {value === "livi" && <LiviBank   amount={amount}/>}
+          {value === "BankChina" && <BankChina  amount={amount} />}
           {/* {value === "small" && <SmallTransfer />} */}
-          {value ==="review" && <Review />}
-          {value ==="hangseng" && <Hangseng />}
-          {value ==='fly1' && <Fly />}
-          {value === 'scpay' && <Scpay /> }
-          {value === "chan" && <Chan />}
-          {value ==="fly2" && <Fly2 />}
-          {value ==='fly3' && <Fly3 />}
-          {value ==="blue"  && <Blue />}
+          {value ==="review" && <Review   amount={amount}/>}
+          {value ==="hangseng" && <Hangseng  amount={amount} />}
+          {value ==='fly1' && <Fly  amount={amount} />}
+          {value === 'scpay' && <Scpay  amount={amount} /> }
+          {value === "chan" && <Chan  amount={amount} />}
+          {value ==="fly2" && <Fly2  amount={amount} />}
+          {value ==='fly3' && <Fly3  amount={amount} />}
+          {value ==="blue"  && <Blue  amount={amount}/>}
         </div>
       </div>
     </>

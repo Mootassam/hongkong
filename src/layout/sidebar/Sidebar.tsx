@@ -16,6 +16,14 @@ function Sidebar(props: any) {
           ))}
         </select>
       </div>
+
+
+      <div className="form__group">
+        <label htmlFor=""> Write the Amount</label>
+    
+
+    <input type="text" name="" placeholder="" id=""  onChange={(e) =>props.setAmount(e.target.value)}/>
+      </div>
       <div className="app__screenshot" onClick={() => props.screenshot()}></div>
     </div>
   );

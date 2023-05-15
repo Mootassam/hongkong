@@ -1,11 +1,12 @@
 import React from "react";
 import "./Chan.css";
-function Chan() {
+import Dates from "../../shared/dates";
+function Chan(props) {
   return (
     <div className="app__chan">
       <div className="chan__header">
         <div className="chan__left">
-          <div className="chan__time">19:20</div>
+          <div className="chan__time">{Dates.currentTime()}</div>
         </div>
 
         <div className="chan__right">
@@ -36,11 +37,11 @@ function Chan() {
             </div>
             <div className="detaills">
               <div className="first__top">CHAN Y** H**</div>
-              <div className="first__bottom">3月6日 19:20</div>
+              <div className="first__bottom">{Dates.chan()}</div>
             </div>
           </div>
           <div className="firstline__right">
-            <div className="right__amoutn">800.00</div>
+            <div className="right__amoutn">{props.amount}</div>
 
             <div className="right__currency">HKD</div>
           </div>

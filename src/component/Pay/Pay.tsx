@@ -1,11 +1,12 @@
 import React from "react";
 import "./Pay.css";
-function Pay() {
+import Dates from "../../shared/dates";
+function Pay(props) {
   return (
     <div className="app__pay">
       <div className="pay__header">
         <div className="pay__left">
-          <div className="pay__time">4:07</div>
+          <div className="pay__time">{Dates.currentTime()}</div>
         </div>
         <div className="pay__right">
       
@@ -37,7 +38,7 @@ function Pay() {
       <div className="pay__content">
         <div className="pay__amount">
           <div className="pay__currency">-HKD</div>
-          <div className="pay__totlaamount">800</div>
+          <div className="pay__totlaamount">{props.amount}</div>
           <div className="pay__rest">.00</div>
         </div>
         <div className="pay__reference">Reference no.2307909165976</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./FLy2.css";
-function Fly2() {
+import Dates from "../../shared/dates";
+function Fly2(props) {
   return (
     <div className="app__fly2">
       <div className="fly2"  style={{ boxShadow: '0px 4px 30px rgba(0, 0, 0, 0.1)' }}>
@@ -11,7 +12,7 @@ function Fly2() {
 
           <div className="fly__title">轉賬成功</div>
 
-          <div className="fly2__amount">-200.00 HKD</div>
+          <div className="fly2__amount">-{props.amount} HKD</div>
 
           <img src="/Fly2/bar.png" alt="" />
         </div>
@@ -27,7 +28,7 @@ function Fly2() {
           </div>
           <div>
           <div className="fly2__subtitle">日期及時間</div>
-            <div className="fly2__date">19 Mar 2023 16:16</div>
+            <div className="fly2__date">{Dates.fly2()}</div>
           </div>
         </div>
       </div>

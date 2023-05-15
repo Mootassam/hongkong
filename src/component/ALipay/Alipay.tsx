@@ -1,11 +1,12 @@
 import React from "react";
 import "./Alipay.css";
-function Alipay() {
+import Dates from "../../shared/dates";
+function Alipay(props) {
   return (
     <div className="app__alipay">
       <div className="alipay">
         <div className="alipay__header">
-          <div className="alipay__time">17:14</div>
+          <div className="alipay__time">{Dates.currentTime()}</div>
           <div className="alipay__right">
             <div className="alipay__data">
               <div className="alipay__1"></div>
@@ -37,7 +38,7 @@ function Alipay() {
 
               <div className="background__amount">
                 <div className="alipay__currency">HKD</div>
-                <div className="alipay__amoutn">200.00</div>
+                <div className="alipay__amoutn">{props.amount}</div>
               </div>
 
               <div className="alipay__bar"></div>

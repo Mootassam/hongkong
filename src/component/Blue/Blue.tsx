@@ -1,6 +1,7 @@
 import React from "react";
 import "./Blue.css";
-function Blue() {
+import Dates from "../../shared/dates";
+function Blue(props) {
   return (
     <div className="app__blue">
       {/* stlying the header  */}
@@ -20,7 +21,7 @@ function Blue() {
               成功轉賬HKD
             </span>
             <span className="blue2__description" style={{ paddingRight: 3 }}>
-              200.00
+              {props.amount}
             </span>
             <span className="blue__caractere" style={{ paddingRight: 7 }}>
               至
@@ -53,7 +54,7 @@ function Blue() {
 
         <div className="third__detail">
           <div className="label__detail">轉賬目的</div>
-          <div className="label__date">Today, 16 Mar 2023</div>
+          <div className="label__date">{Dates.blue()}</div>
         </div>
 
         <div className="fast__transfer">

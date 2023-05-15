@@ -1,6 +1,6 @@
 import React from "react";
 import "./Fly.css";
-function Fly() {
+function Fly(props) {
   return (
     <div className="app__fly">
       <div className="fly__header">
@@ -44,7 +44,7 @@ function Fly() {
 
         <div className="totalfly__amount">
           <div className="fly__currency">HKD</div>
-          <div className="fly__amount">200.00</div>
+          <div className="fly__amount">{props.amount}</div>
         </div>
       </div>
 

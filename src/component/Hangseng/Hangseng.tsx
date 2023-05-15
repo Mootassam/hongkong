@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hangseng.css";
-function Hangseng() {
+import Dates from "../../shared/dates";
+function Hangseng(props) {
   return (
     <div className="hang__seng">
       <div className="hangseng__header">
@@ -76,7 +77,7 @@ function Hangseng() {
         </div>
         <div className="hangseng__right hangseng__amount">
           <span className="hagseng__text">港元</span>
-          <span className="number__">800.00</span>
+          <span className="number__">{props.amount}</span>
         </div>
       </div>
       <div className="hangseng__" style={{paddingTop :22}}>
@@ -89,7 +90,10 @@ function Hangseng() {
         <div className="hangseng__right">
           <div className="hangseng__right hangseng__amount">
             <span className="hagseng__text">即時</span>
-            <span className="number__ __datew">14/03/2023</span>
+            <span className="number__ __datew">
+              
+
+              {Dates.hangSeng()}</span>
           </div>
         </div>
       </div>

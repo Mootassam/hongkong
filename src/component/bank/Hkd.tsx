@@ -1,6 +1,7 @@
 import React from "react";
 import "./bank.css";
-function Hkd() {
+import Dates from "../../shared/dates";
+function Hkd(props) {
   return (
     <div className="app__hkd">
       <div className="hdk__header">
@@ -43,7 +44,7 @@ function Hkd() {
         <div className="amoutn__amount">
           <div className="currency__">HKD</div>
           <div className="currency">
-            <div className="currency__amount"> 800.00</div>
+            <div className="currency__amount"> {props.amount}</div>
             <div className="currency__cr">CR</div>
           </div>
         </div>
@@ -70,7 +71,7 @@ function Hkd() {
         </div>
         <div>
           <div className="hkd__left">交易时間</div>
-          <div className="hkd__right">2023-03-15 16:44:06</div>
+          <div className="hkd__right">{Dates.datetime()}</div>
         </div>
         <div>
           <div className="hkd__left">對手銀行</div>

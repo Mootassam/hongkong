@@ -1,11 +1,12 @@
 import React from "react";
 import "./Fps.css";
-function Fps() {
+import Dates from "../../shared/dates";
+function Fps(props) {
   return (
     <div className="app__fps">
       <div className="fps__header">
         <div className="fps__battery">
-          <div className="fps__left"> 13:09</div>
+          <div className="fps__left"> {Dates.currentTime()} </div>
           <div className="fps__right">
             <div className="battery__fps">
               <div className="">
@@ -64,7 +65,7 @@ function Fps() {
               <div className="amount__">
                 <div className="amount__currency">HK</div>
                 <div className="currency__">$</div>
-                <div className="amount">200.00</div>
+                <div className="amount">{props.amount}</div>
               </div>
             </div>
 
@@ -104,7 +105,7 @@ function Fps() {
               <div className="payee__name">
                 <div className="payment__left">Time</div>
                 <div className="payment__right">
-                  <div>2023-03-11 13:09:14</div>
+                  <div>{Dates.datetime()}</div>
                 </div>
               </div>
             </div>

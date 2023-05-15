@@ -1,6 +1,7 @@
 import React from "react";
 import "./bankChina.css";
-function BankChina() {
+import Dates from "../../shared/dates";
+function BankChina(props) {
   return (
     <div className="app__china">
       <div className="china__header">
@@ -29,7 +30,7 @@ function BankChina() {
 
         <div className="contentchina__detail __topspace">
           <div className="china__left">交易日期</div>
-          <div className="china__right __chinadate">2023/03/13</div>
+          <div className="china__right __chinadate">{Dates.lividate()}</div>
         </div>
 
         <div className="contentchina__detail __topspace">
@@ -51,7 +52,7 @@ function BankChina() {
         </div>
         <div className="contentchina__detail normalspace">
           <div className="china__left">轉賬金額</div>
-          <div className="china__right __specialfont ">港元200.00</div>
+          <div className="china__right __specialfont ">港元{props.amount}</div>
         </div>
         <div className="contentchina__detail normalspace">
           <div className="china__left">轉賬費用</div>

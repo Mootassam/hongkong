@@ -1,6 +1,6 @@
 import React from "react";
 import "./scpay.css";
-function Scpay() {
+function Scpay(props) {
   return (
     <div className="app__scpay">
       <div className="scpay__header">
@@ -16,7 +16,7 @@ function Scpay() {
         <label className="fscpay__title">此款項已成功轉賬至收款人</label>
         <div className="fscpay__">
           <span className="chinesetext">您已轉賬 港幣</span>
-          <span className="number__text">88.00元</span>&nbsp;
+          <span className="number__text">{props.amount}元</span>&nbsp;
           <span className="chinesetext"> 給</span>&nbsp;
           <span className="englishtext">CHAN T**** M***</span>
         </div>
