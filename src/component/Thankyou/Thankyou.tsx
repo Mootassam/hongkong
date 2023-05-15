@@ -3,6 +3,8 @@ import "./thanks.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 function Thankyou(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__thankyou">
       <div className="thankyou__header">

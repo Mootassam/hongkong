@@ -2,6 +2,8 @@ import React from "react";
 import "./Fly.css";
 import Dates from "../../shared/dates";
 function Fly(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__fly">
       <div className="fly__header">
@@ -21,7 +23,10 @@ function Fly(props) {
 
           <div className="name__battery">
             <div className="fly__battery">
-              <div className="fly__level"></div>
+              <div className="fly__level" style={{
+                        width: `${limit}%`,
+                 
+                      }}></div>
             </div>
             <div className="small__batteryborder"></div>
           </div>

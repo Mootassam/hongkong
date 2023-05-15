@@ -3,6 +3,8 @@ import "./Fps.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 function Fps(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__fps">
       <div className="fps__header">
@@ -20,7 +22,7 @@ function Fps(props) {
                 <div className="fps__3"></div>
                 <div className="fps__4"></div>
               </div>
-              <label htmlFor="">100%</label>
+              <label htmlFor="">{limit}%</label>
               <div className="battery__f">
                 <div className="batterytop"></div>
                 <div className="battery__fp"></div>

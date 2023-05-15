@@ -4,6 +4,8 @@ import Dates from "../../shared/dates";
 import Names from "../../shared/Names";
 import Number from "../../shared/Number";
 function Alipay(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__alipay">
       <div className="alipay">
@@ -17,9 +19,20 @@ function Alipay(props) {
               <div className="alipay__4"></div>
             </div>
             <div className="alipay__namedata">LTE</div>
+            <div className="battt__">
             <div className="alipay__battery">
-              <div className="alipay__level"></div>
+              <div
+                className="alipay__level"
+                style={{
+                  width: `${limit}%`,
+                }}
+              ></div>
+       
             </div>
+
+            <div className="alipay__borderbattery"></div>
+            </div>
+
           </div>
         </div>
         <div className="alipay__content">
@@ -42,9 +55,7 @@ function Alipay(props) {
 
               <div className="background__amount">
                 <div className="alipay__currency">HKD</div>
-                <div className="alipay__amoutn">
-                  {props.amount}
-                </div>
+                <div className="alipay__amoutn">{props.amount}</div>
               </div>
 
               <div className="alipay__bar"></div>

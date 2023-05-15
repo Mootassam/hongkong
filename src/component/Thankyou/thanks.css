@@ -57,13 +57,13 @@
 .right__ {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .data__cnx {
   display: flex;
   align-items: baseline;
-  gap: 2px;
+  gap: 1px;
 }
 .data__cnx > div {
   width: 3px;
@@ -79,7 +79,7 @@
 }
 .cnx__3 {
   height: 9px;
-  background-color: #cbcbcb;
+  background-color: #000;
 }
 .cnx__4 {
   height: 12px;
