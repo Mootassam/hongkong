@@ -9,7 +9,7 @@ function BankChina() {
       <img
         src="/bankchina/background.png"
         alt=""
-        width={188}
+        width={180}
         className="backgroundchina__image"
       />
       <div className="china__content">
