@@ -52,7 +52,7 @@ function App() {
           {value === "pay" && <Pay />}
           {value === "livi" && <LiviBank />}
           {value === "BankChina" && <BankChina />}
-          {value === "small" && <SmallTransfer />}
+          {/* {value === "small" && <SmallTransfer />} */}
           {value ==="review" && <Review />}
           {value ==="hangseng" && <Hangseng />}
           {value ==='fly1' && <Fly />}

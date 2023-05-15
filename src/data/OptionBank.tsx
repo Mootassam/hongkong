@@ -10,7 +10,7 @@ const optionBank = [
   { name: "Pay", value: "pay" },
   { name: "livi", value: "livi" },
   { name: "BankChina", value: "BankChina" },
-  { name: "localbanksmall", value: "small" },
+  // { name: "localbanksmall", value: "small" },
   { name: "Review", value: "review" },
   { name: "hang seng bank", value: "hangseng" },
   { name: "fly1", value: "fly1" },

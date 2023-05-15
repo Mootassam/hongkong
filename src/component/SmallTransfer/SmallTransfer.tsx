@@ -124,6 +124,8 @@ function SmallTransfer() {
         <div></div>
       </div>
 
+      <div className="transfer__bottom">
+
       <div className="detaill__buttons">
         <div className="button__transferpay">
           <span>Back to Transfer & Pay </span>
@@ -136,6 +138,8 @@ function SmallTransfer() {
 
       <div className="small__bottom">
         <div className="bottom__border"></div>
+      </div>
+
       </div>
     </div>
   );
