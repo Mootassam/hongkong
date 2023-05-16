@@ -2,6 +2,8 @@ import React from "react";
 import "./Pay.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import { AiOutlineWifi } from "react-icons/ai";
+import Left from "../../shared/icons/Left";
 function Pay(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -9,20 +11,33 @@ function Pay(props) {
     <div className="app__pay">
       <div className="pay__header">
         <div className="pay__left">
-          <div className="pay__time">{Dates.currentTime()}</div>
+          <div className="pay__time">
+            {Dates.currentTime()}
+
+            <Left />
+          </div>
         </div>
-        <div className="pay__right">
+        <div className="pay__rights">
+          <AiOutlineWifi color="606060" />
+
+          <div className="pay__data">
+            <div className="pay1__"></div>
+            <div className="pay2__"></div>
+            <div className="pay3__"></div>
+            <div className="pay4__"></div>
+          </div>
+
           <div className="pay__battery">
             <label htmlFor="">{limit}%</label>
             <div className="fly3__battery">
-            <div className="top__fly3"></div>
-            <div className="battery__fly3">
-              <div
-                className="level__fly3"
-                style={{ height: `${limit}%` }}
-              ></div>
+              <div className="top__fly3"></div>
+              <div className="battery__fly3">
+                <div
+                  className="level__fly3"
+                  style={{ height: `${limit}%` }}
+                ></div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -42,7 +57,9 @@ function Pay(props) {
           <div className="pay__totlaamount">{props.amount}</div>
           <div className="pay__rest">.00</div>
         </div>
-        <div className="pay__reference">Reference no.23079{Number.generateRandom8Number()}</div>
+        <div className="pay__reference">
+          Reference no.23079{Number.generateRandom8Number()}
+        </div>
 
         <div className="pay__message">
           <div className="message__circle">
@@ -83,7 +100,9 @@ function Pay(props) {
             <div className="detaill__payleft">To</div>
             <div className="detaill__payright __to">
               <span>YU W** M***</span>
-              <span className="pay__grey">10543{Number.generateRandom4Number()}</span>
+              <span className="pay__grey">
+                10543{Number.generateRandom4Number()}
+              </span>
             </div>
           </div>
         </div>

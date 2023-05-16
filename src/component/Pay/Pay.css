@@ -12,8 +12,10 @@
   padding: 15px 20px;
   justify-content: space-between;
 }
-
-.pay__battery {
+.pay__time {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .pay__time {
@@ -333,6 +335,14 @@ styling the mobile footer */
   color: #606060;
 }
 
+
+.pay__rights{ 
+  display: flex;
+  align-items:center;
+  gap:3px
+}
+
+
 .pay__battery {
   display: flex;
   gap: 2px;
@@ -355,4 +365,27 @@ styling the mobile footer */
   width: 3px;
   height: 1px;
   background: #444444;
+}
+
+.pay__data {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.pay__data > div {
+  width: 1.6px;
+  background-color: #606060;
+}
+.pay1__ {
+  height: 4px;
+}
+.pay2__ {
+  height: 6px;
+}
+.pay3__ {
+  height: 8px;
+}
+.pay4__ {
+  height: 10px;
 }
