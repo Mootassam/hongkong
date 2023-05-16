@@ -11,10 +11,7 @@ function Fps(props) {
       <div className="fps__header">
         <div className="fps__battery">
           <div className="fps__left"> {Dates.currentTime()} 
-          
-          
           <Left />
-          
           </div>
           <div className="fps__right">
             <div className="battery__fps">

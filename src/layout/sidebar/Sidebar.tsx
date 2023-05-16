@@ -31,7 +31,7 @@ function Sidebar(props: any) {
           />
         </div>
 
-        <div className="form__group">
+        {/* <div className="form__group">
           <label htmlFor="">Customer Name</label>
 
           <input
@@ -41,7 +41,7 @@ function Sidebar(props: any) {
             id=""
             onChange={(e) => props.setCustomer(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
       <div className="app__screenshot" onClick={() => props.screenshot()}></div>
     </div>
