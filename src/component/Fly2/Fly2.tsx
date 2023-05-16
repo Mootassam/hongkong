@@ -1,6 +1,7 @@
 import React from "react";
 import "./FLy2.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Fly2(props) {
   return (
     <div className="app__fly2">
@@ -24,7 +25,7 @@ function Fly2(props) {
           </div>
           <div>
           <div className="fly2__subtitle">轉數快識別代碼</div>
-            <div className="fly2__number">105430979</div>
+            <div className="fly2__number">10543{Number.generateRandom4Number()}</div>
           </div>
           <div>
           <div className="fly2__subtitle">日期及時間</div>

@@ -45,7 +45,7 @@ function Blue(props) {
       <div className="blue__detaill">
         <div className="first__detail">
           <div className="label__detail">收款人资料</div>
-          <div className="label__numb">105430979</div>
+          <div className="label__numb">10543{Number.generateRandom4Number()}</div>
         </div>
 
         <div className="second__detail">

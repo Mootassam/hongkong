@@ -1,6 +1,7 @@
 import React from "react";
 import "./Pay.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Pay(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -41,7 +42,7 @@ function Pay(props) {
           <div className="pay__totlaamount">{props.amount}</div>
           <div className="pay__rest">.00</div>
         </div>
-        <div className="pay__reference">Reference no.2307909165976</div>
+        <div className="pay__reference">Reference no.23079{Number.generateRandom8Number()}</div>
 
         <div className="pay__message">
           <div className="message__circle">
@@ -82,7 +83,7 @@ function Pay(props) {
             <div className="detaill__payleft">To</div>
             <div className="detaill__payright __to">
               <span>YU W** M***</span>
-              <span className="pay__grey">105430979</span>
+              <span className="pay__grey">10543{Number.generateRandom4Number()}</span>
             </div>
           </div>
         </div>

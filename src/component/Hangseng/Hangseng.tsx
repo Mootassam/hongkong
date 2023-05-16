@@ -21,7 +21,7 @@ function Hangseng(props) {
           <div className="subheader__bottom">
             <div className="subheader__description">
               <div className="first__description">參考編號</div>
-              <div className="second__description">N31474773956</div>
+              <div className="second__description">N314{Number.generateRandom8Number()}</div>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ function Hangseng(props) {
             <span>M***</span>
           </label>
           <label htmlFor="" className="hangseng__message">
-            105430979
+            10543{Number.generateRandom4Number()}
           </label>
         </div>
       </div>

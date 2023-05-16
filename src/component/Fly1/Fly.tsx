@@ -1,6 +1,7 @@
 import React from "react";
 import "./Fly.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Fly(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -40,7 +41,7 @@ function Fly(props) {
 
         <div className="fly__title">你已成功付款給</div>
 
-        <div className="fly__number">105053599</div>
+        <div className="fly__number">10505{Number.generateRandom4Number()}</div>
 
         <div className="fly__description">
           <span>轉數快」</span>

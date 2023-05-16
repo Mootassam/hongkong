@@ -3,6 +3,7 @@ import "./Fly3.css";
 import Dates from "../../shared/dates";
 import Left from "../../shared/icons/Left";
 import { BsWifi } from "react-icons/bs";
+import Number from "../../shared/Number";
 function Fly3(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -53,7 +54,7 @@ function Fly3(props) {
         <div className="fly3__detaill">
           <div className="detaill__fly3">
             <div className="detaill__fly3__left">From</div>
-            <div className="detaill__fly3__right">1005448892</div>
+            <div className="detaill__fly3__right">100544{Number.generateRandom4Number()}</div>
           </div>
           <div className="detaill__fly3 __payto">
             <div className="detaill__fly3__left">Pay to</div>
@@ -61,7 +62,7 @@ function Fly3(props) {
           </div>
           <div className="detaill__fly3 __proxyid ">
             <div className="detaill__fly3__left">FPS Proxy ID</div>
-            <div className="detaill__fly3__right">105053599</div>
+            <div className="detaill__fly3__right">10505{Number.generateRandom4Number()}</div>
           </div>
           <div className="detaill__fly3 __datetime">
             <div className="detaill__fly3__left">Date and time</div>

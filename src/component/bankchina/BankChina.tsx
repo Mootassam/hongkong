@@ -17,7 +17,7 @@ function BankChina(props) {
       <div className="china__content">
         <div className="contentchina__detail">
           <div className="china__left">參考編號</div>
-          <div className="china__right">2307209195735</div>
+          <div className="china__right">23072{Number.generateRandom8Number()}</div>
         </div>
 
         <div className="contentchina__detail __topspace">
