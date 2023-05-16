@@ -2,20 +2,28 @@ import React from "react";
 import "./Fly3.css";
 import Dates from "../../shared/dates";
 import Left from "../../shared/icons/Left";
+import { BsWifi } from "react-icons/bs";
 function Fly3(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
   return (
     <div className="app__fly3">
       <div className="fly3__header">
-        <div className="header__timefly3">{Dates.currentTime()}
-        
+        <div className="header__timefly3">
+          {Dates.currentTime()}
 
-        <Left />
-        
-        
+          <Left />
         </div>
         <div className="fly3__right">
+
+          <BsWifi color="#333335" />
+          <div className="review__datafly3">
+            <div className="fly3__1"></div>
+            <div className="fly3__2"></div>
+            <div className="fly3__3"></div>
+            <div className="fly3__4"></div>
+            <div className="fly3__5"></div>
+          </div>
           <label htmlFor="">{limit}%</label>
           <div className="fly3__battery">
             <div className="top__fly3"></div>

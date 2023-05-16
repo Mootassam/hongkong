@@ -2,6 +2,7 @@ import React from "react";
 import "./Fps.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Left from "../../shared/icons/Left";
 function Fps(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -9,11 +10,15 @@ function Fps(props) {
     <div className="app__fps">
       <div className="fps__header">
         <div className="fps__battery">
-          <div className="fps__left"> {Dates.currentTime()} </div>
+          <div className="fps__left"> {Dates.currentTime()} 
+          
+          
+          <Left />
+          
+          </div>
           <div className="fps__right">
             <div className="battery__fps">
               <div className="">
-                <img src="/fps/lte1.png" alt="" width={14} height={12} />
               </div>
 
               <div className="data__fps">
@@ -23,10 +28,15 @@ function Fps(props) {
                 <div className="fps__4"></div>
               </div>
               <label htmlFor="">{limit}%</label>
-              <div className="battery__f">
-                <div className="batterytop"></div>
-                <div className="battery__fp"></div>
-              </div>
+              <div className="fly3__battery">
+            <div className="top__fly3"></div>
+            <div className="battery__fly3">
+              <div
+                className="level__fly3"
+                style={{ height: `${limit}%` }}
+              ></div>
+            </div>
+          </div>
             </div>
           </div>
         </div>

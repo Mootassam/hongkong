@@ -336,6 +336,7 @@ styling the mobile footer */
 .pay__battery {
   display: flex;
   gap: 2px;
+  align-items: center;
 }
 
 .battery__pay {

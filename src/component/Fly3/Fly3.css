@@ -184,7 +184,7 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 12%;
-  gap:2px;
+  gap: 2px;
   /* or 2px */
 
   display: flex;
@@ -238,4 +238,33 @@
   width: 8px;
   height: 6px;
   background-color: #434343;
+}
+
+/* styling the data  */
+
+.review__datafly3 {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.review__datafly3 > div {
+  width: 1px;
+  background-color: #626262;
+}
+
+.fly3__1 {
+  height: 2px;
+}
+.fly3__2 {
+  height: 4px;
+}
+.fly3__3 {
+  height: 6px;
+}
+.fly3__4 {
+  height: 8px;
+}
+.fly3__5 {
+  height: 10px;
 }

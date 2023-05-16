@@ -2,6 +2,8 @@ import React from "react";
 import "./Pay.css";
 import Dates from "../../shared/dates";
 function Pay(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__pay">
       <div className="pay__header">
@@ -9,17 +11,17 @@ function Pay(props) {
           <div className="pay__time">{Dates.currentTime()}</div>
         </div>
         <div className="pay__right">
-      
-
-     
-
-
           <div className="pay__battery">
-            <label htmlFor="">98%</label>
-            <div className="battery__pay">
-              <div className="paylevel"></div>
-              <div className="batterypay"></div>
+            <label htmlFor="">{limit}%</label>
+            <div className="fly3__battery">
+            <div className="top__fly3"></div>
+            <div className="battery__fly3">
+              <div
+                className="level__fly3"
+                style={{ height: `${limit}%` }}
+              ></div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -29,9 +31,7 @@ function Pay(props) {
           <img src="/pay/back.png" alt="" width={18} />
         </div>
         <div className="button__casque">
-
-        <img src="/pay/casque.png" alt="" width={18} />
-
+          <img src="/pay/casque.png" alt="" width={18} />
         </div>
       </div>
 
