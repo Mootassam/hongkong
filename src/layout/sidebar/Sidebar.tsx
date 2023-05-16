@@ -30,6 +30,18 @@ function Sidebar(props: any) {
             maxLength={9}
           />
         </div>
+
+        <div className="form__group">
+          <label htmlFor="">Customer Name</label>
+
+          <input
+            type="text"
+            name=""
+            placeholder=""
+            id=""
+            onChange={(e) => props.setCustomer(e.target.value)}
+          />
+        </div>
       </div>
       <div className="app__screenshot" onClick={() => props.screenshot()}></div>
     </div>

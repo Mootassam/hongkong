@@ -23,7 +23,8 @@ function Thankyou(props) {
             <div className="name__data">4G</div>
             <div className="right__battery">
               <div className="thank__battery">
-                <span className="battery__level">76</span>
+                <div className="battery__level" style={{ width :`${limit}%`}}></div>
+                <span className="battery__text">{limit} </span>
               </div>
               <div className="small__"></div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Blue.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Blue(props) {
   return (
     <div className="app__blue">
@@ -21,7 +22,7 @@ function Blue(props) {
               成功轉賬HKD
             </span>
             <span className="blue2__description" style={{ paddingRight: 3 }}>
-              {props.amount}
+              {Number.hongkong(props.amount)}
             </span>
             <span className="blue__caractere" style={{ paddingRight: 7 }}>
               至
@@ -63,6 +64,7 @@ function Blue(props) {
 
         <div className="description__oneconenct">
           <div>
+            <span  className="chinese__text">經</span>
             <span className="chinese__text" style={{ paddingRight: 7 }}>
               「轉數快]
             </span>

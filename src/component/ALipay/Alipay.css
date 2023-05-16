@@ -19,7 +19,7 @@
   font-size: 15px;
   line-height: 112.19%;
   /* or 17px */
-
+  gap: 2px;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -119,18 +119,17 @@
   background-color: #909090;
 }
 
-.alipay__borderbattery{ 
+.alipay__borderbattery {
   width: 2px;
   height: 5px;
-  background-color: #909090 ;
+  background-color: #909090;
 }
 
-.battt__{ 
+.battt__ {
   display: flex;
   align-items: center;
-  gap:0.6px
+  gap: 0.6px;
 }
-
 
 .alipay__data {
   display: flex;

@@ -1,4 +1,4 @@
-import { useRef, useState,useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import "./App.css";
 import Bank from "./component/bank/bank";
@@ -22,8 +22,6 @@ import Fly2 from "./component/Fly2/Fly2";
 import Fly3 from "./component/Fly3/Fly3";
 import Blue from "./component/Blue/Blue";
 
-
-
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -31,10 +29,8 @@ function App() {
     Screenshot.handleCaptureScreenshot(divRef);
   };
   const [value, setValue] = useState("alipay");
-  const [amount , setAmount] =useState(200)
-
-
- 
+  const [amount, setAmount] = useState(200);
+  const [customer, setCustomer] = useState("Vivian Yip");
 
   return (
     <>
@@ -45,25 +41,30 @@ function App() {
           valu={value}
           setvalue={setValue}
           setAmount={setAmount}
+          setCustomer={setCustomer}
         />
         <div className="content" ref={divRef}>
-          {value === "800" && <Hkd  amount={amount}/>}
-          {value === "800l" && <Bank  amount={amount} />}
-          {value === "fps" && <Fps  amount={amount}/>}
-          {value === "thankyou" && <Thankyou  amount={amount} />}
-          {value === "alipay" && <Alipay  amount={amount} />}
-          {value === "pay" && <Pay   amount={amount}/>}
-          {value === "livi" && <LiviBank   amount={amount}/>}
-          {value === "BankChina" && <BankChina  amount={amount} />}
+          {value === "800" && <Hkd customer={customer} amount={amount} />}
+          {value === "800l" && <Bank customer={customer} amount={amount} />}
+          {value === "fps" && <Fps customer={customer} amount={amount} />}
+          {value === "thankyou" && <Thankyou amount={amount} />}
+          {value === "alipay" && <Alipay customer={customer} amount={amount} />}
+          {value === "pay" && <Pay customer={customer} amount={amount} />}
+          {value === "livi" && <LiviBank customer={customer} amount={amount} />}
+          {value === "BankChina" && (
+            <BankChina customer={customer} amount={amount} />
+          )}
           {/* {value === "small" && <SmallTransfer />} */}
-          {value ==="review" && <Review   amount={amount}/>}
-          {value ==="hangseng" && <Hangseng  amount={amount} />}
-          {value ==='fly1' && <Fly  amount={amount} />}
-          {value === 'scpay' && <Scpay  amount={amount} /> }
-          {value === "chan" && <Chan  amount={amount} />}
-          {value ==="fly2" && <Fly2  amount={amount} />}
-          {value ==='fly3' && <Fly3  amount={amount} />}
-          {value ==="blue"  && <Blue  amount={amount}/>}
+          {value === "review" && <Review customer={customer} amount={amount} />}
+          {value === "hangseng" && (
+            <Hangseng customer={customer} amount={amount} />
+          )}
+          {value === "fly1" && <Fly customer={customer} amount={amount} />}
+          {value === "scpay" && <Scpay customer={customer} amount={amount} />}
+          {value === "chan" && <Chan customer={customer} amount={amount} />}
+          {value === "fly2" && <Fly2 customer={customer} amount={amount} />}
+          {value === "fly3" && <Fly3 customer={customer} amount={amount} />}
+          {value === "blue" && <Blue customer={customer} amount={amount} />}
         </div>
       </div>
     </>

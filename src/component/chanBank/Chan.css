@@ -23,6 +23,7 @@
 .chan__right {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
 .chan__battery {
@@ -54,15 +55,13 @@
 .battery__chan {
   width: 22px;
   height: 12px;
-
   border: 1px solid #000000;
   border-radius: 4px;
 }
 
 .chan__level {
-  width: 5px;
-  height: 8px;
-
+  width: 5%;
+  height: 100%;
   background: #000000;
   border-radius: 2px;
 }
@@ -70,7 +69,7 @@
 .chan__borderbattery {
   width: 2px;
   height: 4px;
-
+  border-radius: 0.7px;
   background: #000000;
 }
 
@@ -165,7 +164,6 @@
   margin-top: 29px;
   width: 369px;
   height: 181px;
-
   background: #ffffff;
   border-radius: 22px;
 }
@@ -329,4 +327,46 @@
   padding-top: 20px;
   display: flex;
   margin: auto;
+}
+
+/* stlying the data  */
+.name__data {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 112.19%;
+  /* or 12px */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.data__chan {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.data__chan > div {
+  width: 3px;
+  border-radius: 1px;
+  background: #000000;
+}
+
+.chan__1 {
+  height: 3px;
+  border-radius: 1px;
+}
+
+.chan__2 {
+  height: 6px;
+}
+
+.chan__3 {
+  height: 9px;
+}
+
+.chan__4 {
+  height: 11px;
 }

@@ -2,11 +2,18 @@ import React from "react";
 import "./bank.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Left from "../../shared/icons/Left";
 function Hkd(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__hkd">
       <div className="hdk__header">
-        <div className="hkd__time">4:50</div>
+        <div className="hkd__time">{Dates.currentTime()}
+        
+    
+        
+        </div>
         <div className="hdk__right">
           <div className="hdk__data">
             <div className="data__1">
@@ -27,7 +34,10 @@ function Hkd(props) {
 
           <div className="styling__battery">
             <div className="battery">
-              <div className="battery__levelbank"></div>
+              <div
+                className="battery__levelbank"
+                style={{ width: `${limit}%` }}
+              ></div>
             </div>
             <div className="battery__bar"></div>
           </div>
@@ -56,7 +66,10 @@ function Hkd(props) {
       <div className="hkd__address">
         <div>
           <div className="hkd__left">交易編號</div>
-          <div className="hkd__right">ENS{Dates.generateRandomDateNumber()}00{Number.genrateRandom6Number()}</div>
+          <div className="hkd__right">
+            ENS{Dates.generateRandomDateNumber()}00
+            {Number.genrateRandom6Number()}
+          </div>
         </div>
         <div>
           <div className="hkd__left">交易類型</div>

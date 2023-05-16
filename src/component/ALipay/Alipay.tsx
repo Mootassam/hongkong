@@ -3,6 +3,7 @@ import "./Alipay.css";
 import Dates from "../../shared/dates";
 import Names from "../../shared/Names";
 import Number from "../../shared/Number";
+import Left from "../../shared/icons/Left";
 function Alipay(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -10,7 +11,11 @@ function Alipay(props) {
     <div className="app__alipay">
       <div className="alipay">
         <div className="alipay__header">
-          <div className="alipay__time">{Dates.currentTime()}</div>
+          <div className="alipay__time">
+            {Dates.currentTime()}
+
+            <Left />
+          </div>
           <div className="alipay__right">
             <div className="alipay__data">
               <div className="alipay__1"></div>
@@ -20,19 +25,17 @@ function Alipay(props) {
             </div>
             <div className="alipay__namedata">LTE</div>
             <div className="battt__">
-            <div className="alipay__battery">
-              <div
-                className="alipay__level"
-                style={{
-                  width: `${limit}%`,
-                }}
-              ></div>
-       
-            </div>
+              <div className="alipay__battery">
+                <div
+                  className="alipay__level"
+                  style={{
+                    width: `${limit}%`,
+                  }}
+                ></div>
+              </div>
 
-            <div className="alipay__borderbattery"></div>
+              <div className="alipay__borderbattery"></div>
             </div>
-
           </div>
         </div>
         <div className="alipay__content">
@@ -49,7 +52,7 @@ function Alipay(props) {
                 <img src="/alipay/alipay.png" alt="" width={58} />
               </div>
               <div className="background__title">
-                已成功轉賬給 Yu {Names.generateRandomFullNameFromHongKong()}
+                已成功轉賬給 {Names.generateRandomFullNameFromHongKong()}
               </div>
               <div className="background__subtitle">已支付</div>
 

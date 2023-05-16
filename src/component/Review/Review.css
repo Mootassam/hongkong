@@ -38,6 +38,9 @@
   font-weight: 400;
   font-size: 12.8px;
   line-height: 15px;
+  display: flex;
+  align-items: center;
+  gap: 2.3px;
   /* identical to box height */
 
   color: #ffffff;
@@ -159,11 +162,7 @@
 }
 
 li {
-
-
 }
-
-
 
 .review__bottom {
   position: absolute;
@@ -191,4 +190,71 @@ li {
 .information__desctioption {
   padding-top: 24px;
   padding-left: 29px;
+}
+
+/* styling the battery  */
+
+.review__headerright {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.batteryy__review {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.full__battery {
+  width: 7px;
+  height: 9px;
+  background-color: #d9d9d9;
+  overflow: hidden;
+  align-items: flex-end;
+  display: flex;
+}
+
+.levell___review {
+  height: 70%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #fff;
+}
+
+.bar__battery {
+  width: 3px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+/* Styling the data */
+
+.review__data {
+  display: flex;
+  align-items: baseline;
+  gap:1px
+
+}
+
+.review__data > div{ 
+  width: 1px;
+  background-color: #FFFFFF;
+}
+
+.review__1{ 
+ 
+  height: 2px;
+}
+.review__2 {
+  height: 4px;
+}
+.review__3 { 
+  height: 6px;
+}
+.review__4{ 
+  height: 8px;
+}
+.review__5{ 
+  height: 10px ;
 }

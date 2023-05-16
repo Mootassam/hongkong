@@ -146,7 +146,7 @@
 
 .battery__levelbank {
   width: 50%;
-  height: 8px;
+  height: 100%;
   background: #000000;
 }
 

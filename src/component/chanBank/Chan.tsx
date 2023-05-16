@@ -2,6 +2,8 @@ import React from "react";
 import "./Chan.css";
 import Dates from "../../shared/dates";
 function Chan(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__chan">
       <div className="chan__header">
@@ -10,9 +12,21 @@ function Chan(props) {
         </div>
 
         <div className="chan__right">
+          <div className="data__chan">
+            <div className="chan__1"></div>
+            <div className="chan__2"></div>
+            <div className="chan__3"></div>
+            <div className="chan__4"></div>
+          </div>
+          <div className="name__data">4G</div>
           <div className="chan__battery">
             <div className="battery__chan">
-              <div className="chan__level"></div>
+              <div
+                className="chan__level"
+                style={{
+                  width: `${limit}%`,
+                }}
+              ></div>
             </div>
 
             <div className="chan__borderbattery"></div>
@@ -59,8 +73,8 @@ function Chan(props) {
         </div>
         <img src="/Chan/bar.png" alt="" className="chan__bars" />
         <div className="chan__lastline">
-        <span>查看詳情</span>
-      </div>
+          <span>查看詳情</span>
+        </div>
       </div>
 
       <div className="chan__footer">
@@ -70,8 +84,6 @@ function Chan(props) {
 
         <div className="chan__submobile"></div>
       </div>
-
-    
     </div>
   );
 }

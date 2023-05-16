@@ -49,5 +49,15 @@ class Number {
     const item = arr[randomIndex];
     return item;
   }
-}
+
+  static hongkong(amount) { 
+    const exchangeRate = 1; // Replace with the actual exchange rate
+    const hkdAmount = amount * exchangeRate;
+    return hkdAmount.toLocaleString('en-HK', {
+      style: 'currency',
+      currency: 'HKD',
+    }).replace('HK$', '');;
+  }
+  }
+
 export default Number;

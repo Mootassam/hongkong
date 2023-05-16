@@ -1,13 +1,31 @@
 import React from "react";
 import "./Fly3.css";
 import Dates from "../../shared/dates";
+import Left from "../../shared/icons/Left";
 function Fly3(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__fly3">
       <div className="fly3__header">
-        <div className="header__timefly3">{Dates.currentTime()}</div>
+        <div className="header__timefly3">{Dates.currentTime()}
+        
+
+        <Left />
+        
+        
+        </div>
         <div className="fly3__right">
-          <label htmlFor="">70%</label>
+          <label htmlFor="">{limit}%</label>
+          <div className="fly3__battery">
+            <div className="top__fly3"></div>
+            <div className="battery__fly3">
+              <div
+                className="level__fly3"
+                style={{ height: `${limit}%` }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -50,8 +68,7 @@ function Fly3(props) {
         </div>
 
         <div className="mobile__bottom">
-
-            <img src="/Fly3/mobile.png" alt="" width={217}  />
+          <img src="/Fly3/mobile.png" alt="" width={217} />
         </div>
       </div>
     </div>
