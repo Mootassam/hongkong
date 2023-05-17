@@ -67,12 +67,10 @@ function Thank() {
 
         <div className="thank__reference">
           <div className="thank__to">Reference number</div>
-
           <div className="thank__right">
             <label className="number__right">N31576819968</label>
           </div>
         </div>
-
         <div className="thank__date">
           <div className="thank__to">Date and time </div>
           <div className="thank__right">

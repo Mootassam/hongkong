@@ -17,6 +17,7 @@ const optionBank = [
   { name: "chan", value: "chan" },
   { name: "fly3", value: "fly3" },
   { name: "blue", value: "blue" },
+  { name: "green", value: "green" },
 ];
 
 export default optionBank;

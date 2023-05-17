@@ -22,6 +22,7 @@ import Fly2 from "./component/Fly2/Fly2";
 import Fly3 from "./component/Fly3/Fly3";
 import Blue from "./component/Blue/Blue";
 import Thank from "./component/thank/Thank";
+import Green from "./component/green/Green";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -70,6 +71,7 @@ function App() {
           {value === "fly2" && <Fly2 customer={customer} amount={amount} />}
           {value === "fly3" && <Fly3 customer={customer} amount={amount} />}
           {value === "blue" && <Blue customer={customer} amount={amount} />}
+          {value === "green" && <Green />}
         </div>
       </div>
     </>
