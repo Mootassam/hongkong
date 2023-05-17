@@ -1,6 +1,7 @@
 import React from "react";
 import "./scpay.css";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Scpay(props) {
   return (
     <div className="app__scpay">
@@ -17,9 +18,12 @@ function Scpay(props) {
         <label className="fscpay__title">此款項已成功轉賬至收款人</label>
         <div className="fscpay__">
           <span className="chinesetext">您已轉賬 港幣</span>
-          <span className="number__text">{Number.hongkong(props.amount)}元</span>&nbsp;
+          <span className="number__text">
+            {Number.hongkong(props.amount)}元
+          </span>
+          &nbsp;
           <span className="chinesetext"> 給</span>&nbsp;
-          <span className="englishtext">CHAN T**** M***</span>
+          <span className="englishtext">{Names.generateRandomFullName()}</span>
         </div>
         <div className="scpay__number">+852-98888888</div>
         <div className="detail__scapy">

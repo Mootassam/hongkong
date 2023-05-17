@@ -3,6 +3,7 @@ import "./Fps.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Left from "../../shared/icons/Left";
+import Names from "../../shared/Names";
 function Fps(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -10,13 +11,14 @@ function Fps(props) {
     <div className="app__fps">
       <div className="fps__header">
         <div className="fps__battery">
-          <div className="fps__left"> {Dates.currentTime()} 
-          <Left />
+          <div className="fps__left">
+            {" "}
+            {Dates.currentTime()}
+            <Left />
           </div>
           <div className="fps__right">
             <div className="battery__fps">
-              <div className="">
-              </div>
+              <div className=""></div>
 
               <div className="data__fps">
                 <div className="fps__1"></div>
@@ -26,14 +28,14 @@ function Fps(props) {
               </div>
               <label htmlFor="">{limit}%</label>
               <div className="fly3__battery">
-            <div className="top__fly3"></div>
-            <div className="battery__fly3">
-              <div
-                className="level__fly3"
-                style={{ height: `${limit}%` }}
-              ></div>
-            </div>
-          </div>
+                <div className="top__fly3"></div>
+                <div className="battery__fly3">
+                  <div
+                    className="level__fly3"
+                    style={{ height: `${limit}%` }}
+                  ></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,8 +85,7 @@ function Fps(props) {
               <div className="payee__name">
                 <div className="payment__left">Payee name</div>
                 <div className="payment__right">
-                  <div>WONG</div>
-                  <div>S** F**</div>
+       <div>{Names.generateRandomFullName()}</div>
                 </div>
               </div>
 

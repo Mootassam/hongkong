@@ -4,6 +4,7 @@ import Dates from "../../shared/dates";
 import Left from "../../shared/icons/Left";
 import { BsWifi } from "react-icons/bs";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Fly3(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -12,11 +13,9 @@ function Fly3(props) {
       <div className="fly3__header">
         <div className="header__timefly3">
           {Dates.currentTime()}
-
           <Left />
         </div>
         <div className="fly3__right">
-
           <BsWifi color="#333335" />
           <div className="review__datafly3">
             <div className="fly3__1"></div>
@@ -58,7 +57,7 @@ function Fly3(props) {
           </div>
           <div className="detaill__fly3 __payto">
             <div className="detaill__fly3__left">Pay to</div>
-            <div className="detaill__fly3__right">CHAN Y** H**</div>
+            <div className="detaill__fly3__right">{Names.generateRandomFullName()}</div>
           </div>
           <div className="detaill__fly3 __proxyid ">
             <div className="detaill__fly3__left">FPS Proxy ID</div>

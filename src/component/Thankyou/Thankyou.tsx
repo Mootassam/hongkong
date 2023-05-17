@@ -2,6 +2,7 @@ import React from "react";
 import "./thanks.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Thankyou(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -65,7 +66,7 @@ function Thankyou(props) {
         <div className="thankyou__to">
           <div className="address__left">To</div>
           <div className="address__right">
-            <div>YU W** M***</div>
+            <div>{Names.generateRandomFullName()}</div>
             <div>FPS ID: 105430979</div>
           </div>
         </div>

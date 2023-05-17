@@ -4,6 +4,7 @@ import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import { AiOutlineWifi } from "react-icons/ai";
 import Left from "../../shared/icons/Left";
+import Names from "../../shared/Names";
 function Pay(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -99,7 +100,7 @@ function Pay(props) {
           <div>
             <div className="detaill__payleft">To</div>
             <div className="detaill__payright __to">
-              <span>YU W** M***</span>
+              <span>{Names.generateRandomFullName()}</span>
               <span className="pay__grey">
                 10543{Number.generateRandom4Number()}
               </span>

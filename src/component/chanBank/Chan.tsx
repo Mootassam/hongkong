@@ -2,6 +2,7 @@ import React from "react";
 import "./Chan.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Chan(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -51,7 +52,7 @@ function Chan(props) {
               <span>CH</span>
             </div>
             <div className="detaills">
-              <div className="first__top">CHAN Y** H**</div>
+              <div className="first__top">CHAN {Names.generateRandomFullName()}</div>
               <div className="first__bottom">{Dates.chan()}</div>
             </div>
           </div>

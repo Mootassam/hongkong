@@ -8,7 +8,7 @@ const optionBank = [
 
   { name: "FPS", value: "fps" },
   { name: "Pay", value: "pay" },
-  { name: "livi", value: "livi" },
+  { name: "livi Bank", value: "livi" },
   { name: "BankChina", value: "BankChina" },
   // { name: "localbanksmall", value: "small" },
   { name: "Review", value: "review" },

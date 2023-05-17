@@ -20,14 +20,13 @@ function Sidebar(props: any) {
 
         <div className="form__group">
           <label htmlFor=""> Write the Amount</label>
-
           <input
             type="number"
             name=""
             placeholder=""
             id=""
             onChange={(e) => props.setAmount(e.target.value)}
-            maxLength={9}
+          maxLength={5}
           />
         </div>
 
