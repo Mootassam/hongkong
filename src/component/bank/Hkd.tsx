@@ -6,14 +6,11 @@ import Left from "../../shared/icons/Left";
 function Hkd(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
+
   return (
     <div className="app__hkd">
       <div className="hdk__header">
-        <div className="hkd__time">{Dates.currentTime()}
-        
-    
-        
-        </div>
+        <div className="hkd__time">{Dates.currentTime()}</div>
         <div className="hdk__right">
           <div className="hdk__data">
             <div className="data__1">
@@ -55,7 +52,10 @@ function Hkd(props) {
         <div className="amoutn__amount">
           <div className="currency__">HKD</div>
           <div className="currency">
-            <div className="currency__amount"> {Number.hongkong(props.amount)}</div>
+            <div className="currency__amount">
+              {" "}
+              {Number.hongkong(props.amount)}
+            </div>
             <div className="currency__cr">CR</div>
           </div>
         </div>

@@ -31,6 +31,7 @@ function App() {
   const [value, setValue] = useState("alipay");
   const [amount, setAmount] = useState(200);
   const [customer, setCustomer] = useState("Vivian Yip");
+  const [size, setSize] =useState("large")
 
   return (
     <>
@@ -38,14 +39,16 @@ function App() {
       <div className="app__content">
         <Sidebar
           screenshot={handleCaptureScreenshot}
-          valu={value}
+          value={value}
           setvalue={setValue}
           setAmount={setAmount}
           setCustomer={setCustomer}
+          setSize={setSize}
+          size={value}
         />
         <div className="content" ref={divRef}>
-          {value === "800" && <Hkd customer={customer} amount={amount} />}
-          {value === "800l" && <Bank customer={customer} amount={amount} />}
+          {value === "800" && size === "small" && <Hkd customer={customer} amount={amount} />}
+          { value === "800" && size === "large" && <Bank customer={customer} amount={amount} />}
           {value === "fps" && <Fps customer={customer} amount={amount} />}
           {value === "thankyou" && <Thankyou amount={amount} />}
           {value === "alipay" && <Alipay customer={customer} amount={amount} />}

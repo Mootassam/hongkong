@@ -99,6 +99,12 @@ class Names {
 
     return fullName;
   };
+
+  static generateRandomSignal() {
+    const texts = ["4G", "5G", "LET"];
+    const randomIndex = Math.floor(Math.random() * texts.length);
+    return texts[randomIndex];
+  }
 }
 
 export default Names;

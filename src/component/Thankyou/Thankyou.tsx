@@ -21,7 +21,7 @@ function Thankyou(props) {
               <div className="cnx__3"></div>
               <div className="cnx__4"></div>
             </div>
-            <div className="name__datas">5G</div>
+            <div className="name__datas">{Names.generateRandomSignal()}</div>
             <div className="right__battery">
               <div className="thank__battery">
                 <div className="battery__level" style={{ width :`${limit}%`}}></div>

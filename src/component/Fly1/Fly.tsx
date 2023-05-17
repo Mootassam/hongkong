@@ -2,6 +2,7 @@ import React from "react";
 import "./Fly.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Fly(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -20,7 +21,7 @@ function Fly(props) {
             <div className="fly__4"></div>
           </div>
 
-          <div className="fly__name__data">LTE</div>
+          <div className="fly__name__data">{Names.generateRandomSignal()}</div>
 
           <div className="name__battery">
             <div className="fly__battery">

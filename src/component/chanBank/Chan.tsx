@@ -20,7 +20,7 @@ function Chan(props) {
             <div className="chan__3"></div>
             <div className="chan__4"></div>
           </div>
-          <div className="name__data">5G</div>
+          <div className="name__data">{Names.generateRandomSignal()}</div>
           <div className="chan__battery">
             <div className="battery__chan">
               <div

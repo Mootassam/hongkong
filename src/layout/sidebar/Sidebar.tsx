@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../data/OptionBank";
 function Sidebar(props: any) {
+  useEffect(() => {}, [props.value]);
+
+  if (props.size !== undefined) {
+    console.log(props.value);
+  }
+
   return (
     <div className="app__sidebar">
       <div className="sidebar__form">
@@ -17,6 +23,19 @@ function Sidebar(props: any) {
             ))}
           </select>
         </div>
+        {props.value === "800" && (
+          <div className="form__group">
+            <label htmlFor=""> Select Size</label>
+            <select
+              name="bank"
+              className="app__select"
+              onChange={(e) => props.setSize(e.target.value)}
+            >
+              <option value="small">Small</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+        )}
 
         <div className="form__group">
           <label htmlFor=""> Write the Amount</label>
@@ -26,21 +45,11 @@ function Sidebar(props: any) {
             placeholder=""
             id=""
             onChange={(e) => props.setAmount(e.target.value)}
-          maxLength={5}
+            maxLength={5}
           />
         </div>
 
-        {/* <div className="form__group">
-          <label htmlFor="">Customer Name</label>
-
-          <input
-            type="text"
-            name=""
-            placeholder=""
-            id=""
-            onChange={(e) => props.setCustomer(e.target.value)}
-          />
-        </div> */}
+      
       </div>
       <div className="app__screenshot" onClick={() => props.screenshot()}></div>
     </div>
