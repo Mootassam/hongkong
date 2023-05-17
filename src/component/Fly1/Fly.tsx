@@ -51,7 +51,7 @@ function Fly(props) {
 
         <div className="totalfly__amount">
           <div className="fly__currency">HKD</div>
-          <div className="fly__amount">{props.amount}</div>
+          <div className="fly__amount">{Number.hongkong(props.amount)}</div>
         </div>
       </div>
 

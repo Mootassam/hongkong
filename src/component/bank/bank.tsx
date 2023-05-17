@@ -11,7 +11,7 @@ function Bank(props) {
         <div className="header__amout">
           <div className="amount__cerruncy">HKD</div>
           <div className="app__amoutn">
-            <div className="amount__total">{props.amount}</div>
+            <div className="amount__total">{Number.hongkong(props.amount)}</div>
             <div className="amount__cr">CR</div>
           </div>
         </div>

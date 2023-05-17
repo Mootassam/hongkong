@@ -30,7 +30,7 @@ function Hkd(props) {
             </div>
           </div>
 
-          <div className="hdk__4g">4G</div>
+          <div className="hdk__4g">5G</div>
 
           <div className="styling__battery">
             <div className="battery">
@@ -55,7 +55,7 @@ function Hkd(props) {
         <div className="amoutn__amount">
           <div className="currency__">HKD</div>
           <div className="currency">
-            <div className="currency__amount"> {props.amount}</div>
+            <div className="currency__amount"> {Number.hongkong(props.amount)}</div>
             <div className="currency__cr">CR</div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import "./Review.css";
 import Dates from "../../shared/dates";
 import Left from "../../shared/icons/Left";
 import { AiOutlineWifi } from "react-icons/ai";
+import Number from "../../shared/Number";
 function Review(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -93,7 +94,7 @@ function Review(props) {
             </label>
           </div>
           <div className="reviewcontent__right">
-            <label htmlFor="">{props.amount}</label>
+            <label htmlFor="">{Number.hongkong(props.amount)}</label>
           </div>
         </div>
 

@@ -13,7 +13,7 @@ function Fly2(props) {
 
           <div className="fly__title">轉賬成功</div>
 
-          <div className="fly2__amount">-{props.amount} HKD</div>
+          <div className="fly2__amount">-{Number.hongkong(props.amount)} HKD</div>
 
           <img src="/Fly2/bar.png" alt="" />
         </div>

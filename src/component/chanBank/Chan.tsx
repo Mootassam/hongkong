@@ -1,6 +1,7 @@
 import React from "react";
 import "./Chan.css";
 import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
 function Chan(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -18,7 +19,7 @@ function Chan(props) {
             <div className="chan__3"></div>
             <div className="chan__4"></div>
           </div>
-          <div className="name__data">4G</div>
+          <div className="name__data">5G</div>
           <div className="chan__battery">
             <div className="battery__chan">
               <div
@@ -55,7 +56,7 @@ function Chan(props) {
             </div>
           </div>
           <div className="firstline__right">
-            <div className="right__amoutn">{props.amount}</div>
+            <div className="right__amoutn">{Number.hongkong(props.amount)}</div>
 
             <div className="right__currency">HKD</div>
           </div>

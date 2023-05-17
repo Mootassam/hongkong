@@ -75,7 +75,7 @@ function Fps(props) {
               <div className="amount__">
                 <div className="amount__currency">HK</div>
                 <div className="currency__">$</div>
-                <div className="amount">{props.amount}</div>
+                <div className="amount">{Number.hongkong(props.amount)}</div>
               </div>
             </div>
 

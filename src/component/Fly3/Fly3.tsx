@@ -44,7 +44,7 @@ function Fly3(props) {
 
           <div className="fly3__title">You’ve sent money!</div>
 
-          <div className="fly3__amount">-{props.amount} HKD</div>
+          <div className="fly3__amount">-{Number.hongkong(props.amount)} HKD</div>
 
           <div className="fly3__bar">
             <img src="Fly3/bar.png" alt="" />

@@ -78,7 +78,7 @@ function Hangseng(props) {
         </div>
         <div className="hangseng__right hangseng__amount">
           <span className="hagseng__text">港元</span>
-          <span className="number__">{props.amount}</span>
+          <span className="number__">{Number.hongkong(props.amount)}</span>
         </div>
       </div>
       <div className="hangseng__" style={{paddingTop :22}}>

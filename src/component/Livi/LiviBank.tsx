@@ -15,7 +15,7 @@ function LiviBank(props) {
             <div className="livi__transferamount">
               <label htmlFor="">Transfer Amount</label>
               <label htmlFor="" className="livi__">
-                <div className="livi__totalAmount">{props.amount}</div>
+                <div className="livi__totalAmount">{Number.hongkong(props.amount)}</div>
                 <div className="currency__livi">HKD</div>
               </label>
             </div>
