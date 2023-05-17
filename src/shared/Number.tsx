@@ -58,6 +58,8 @@ class Number {
       currency: 'HKD',
     }).replace('HK$', '');;
   }
+
+
   }
 
 export default Number;

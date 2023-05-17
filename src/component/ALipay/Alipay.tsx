@@ -11,11 +11,7 @@ function Alipay(props) {
     <div className="app__alipay">
       <div className="alipay">
         <div className="alipay__header">
-          <div className="alipay__time">
-            {Dates.currentTime()}
-
-           
-          </div>
+          <div className="alipay__time">{Dates.currentTime()}</div>
           <div className="alipay__right">
             <div className="alipay__data">
               <div className="alipay__1"></div>
@@ -23,7 +19,7 @@ function Alipay(props) {
               <div className="alipay__3"></div>
               <div className="alipay__4"></div>
             </div>
-            <div className="alipay__namedata">LTE</div>
+            <div className="alipay__namedata">5G</div>
             <div className="battt__">
               <div className="alipay__battery">
                 <div
@@ -55,19 +51,18 @@ function Alipay(props) {
                 已成功轉賬給 {Names.generateRandomFullNameFromHongKong()}
               </div>
               <div className="background__subtitle">已支付</div>
-
               <div className="background__amount">
                 <div className="alipay__currency">HKD</div>
-                <div className="alipay__amoutn">{props.amount}</div>
+                <div className="alipay__amoutn">
+                  {Number.hongkong(props.amount)}
+                </div>
               </div>
-
               <div className="alipay__bar"></div>
               <div className="">
                 <div className="alipay__address">
                   <div className="alipaydetail__left">轉賬至</div>
                   <div className="alipaydetail__right">Mox Bank</div>
                 </div>
-
                 <div className="inside__bar">
                   <img src="/alipay/bar.png" alt="" />
                 </div>
