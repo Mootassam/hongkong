@@ -28,10 +28,10 @@
   align-items: center;
 }
 
-.name__data {
+.name__datas {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   /* identical to box height */

@@ -20,7 +20,7 @@ function Thankyou(props) {
               <div className="cnx__3"></div>
               <div className="cnx__4"></div>
             </div>
-            <div className="name__data">4G</div>
+            <div className="name__datas">5G</div>
             <div className="right__battery">
               <div className="thank__battery">
                 <div className="battery__level" style={{ width :`${limit}%`}}></div>
@@ -75,7 +75,7 @@ function Thankyou(props) {
         <div className="thankyou__amount">
           <div className="address__left">Amount</div>
           <div className="address__right _amount">
-            <div>{props.amount}</div>
+            <div>{Number.hongkong(props.amount)}</div>
             <div>HKD</div>
           </div>
         </div>
