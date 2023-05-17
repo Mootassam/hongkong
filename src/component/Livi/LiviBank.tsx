@@ -2,6 +2,7 @@ import React from "react";
 import "./Livi.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function LiviBank(props) {
   return (
     <div className="app__livi">
@@ -15,7 +16,9 @@ function LiviBank(props) {
             <div className="livi__transferamount">
               <label htmlFor="">Transfer Amount</label>
               <label htmlFor="" className="livi__">
-                <div className="livi__totalAmount">{Number.hongkong(props.amount)}</div>
+                <div className="livi__totalAmount">
+                  {Number.hongkong(props.amount)}
+                </div>
                 <div className="currency__livi">HKD</div>
               </label>
             </div>
@@ -25,7 +28,7 @@ function LiviBank(props) {
                 Recipient
               </label>
               <label htmlFor="" className="reciptient__label">
-                YU W** M***
+                {Names.generateRandomFullName()}
               </label>
             </div>
 

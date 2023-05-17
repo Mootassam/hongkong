@@ -22,7 +22,7 @@ function Sidebar(props: any) {
           <label htmlFor=""> Write the Amount</label>
 
           <input
-            type="text"
+            type="number"
             name=""
             placeholder=""
             id=""
