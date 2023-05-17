@@ -21,6 +21,7 @@ import Chan from "./component/chanBank/Chan";
 import Fly2 from "./component/Fly2/Fly2";
 import Fly3 from "./component/Fly3/Fly3";
 import Blue from "./component/Blue/Blue";
+import Thank from "./component/thank/Thank";
 
 function App() {
   const divRef = useRef<HTMLDivElement>(null);
@@ -51,6 +52,7 @@ function App() {
           { value === "800" && size === "large" && <Bank customer={customer} amount={amount} />}
           {value === "fps" && <Fps customer={customer} amount={amount} />}
           {value === "thankyou" && <Thankyou amount={amount} />}
+          {value  === "thank" && <Thank />}
           {value === "alipay" && <Alipay customer={customer} amount={amount} />}
           {value === "pay" && <Pay customer={customer} amount={amount} />}
           {value === "livi" && <LiviBank customer={customer} amount={amount} />}

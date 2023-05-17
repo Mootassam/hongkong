@@ -52,7 +52,9 @@ function Chan(props) {
               <span>CH</span>
             </div>
             <div className="detaills">
-              <div className="first__top">CHAN {Names.generateRandomFullName()}</div>
+              <div className="first__top">
+                CHAN {Names.generateRandomFullName()}
+              </div>
               <div className="first__bottom">{Dates.chan()}</div>
             </div>
           </div>
