@@ -3,7 +3,7 @@ const optionBank = [
     name: "Alipay",
     value: "alipay",
   },
-  { name: "thankyou", value: "thankyou" },
+
   { name: "Thank", value: "thank" },
   { name: "800", value: "800" },
   { name: "FPS", value: "fps" },

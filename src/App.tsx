@@ -33,7 +33,7 @@ function App() {
   const [value, setValue] = useState("alipay");
   const [amount, setAmount] = useState(200);
   const [customer, setCustomer] = useState("Vivian Yip");
-  const [size, setSize] = useState("large");
+  const [size, setSize] = useState("small");
 
   return (
     <>
@@ -52,7 +52,7 @@ function App() {
           {value === "800" && size === "small" && <Hkd amount={amount} />}
           {value === "800" && size === "large" && <Bank amount={amount} />}
           {value === "fps" && <Fps amount={amount} />}
-          {value === "thankyou" && <Thankyou amount={amount} />}
+          {/* {value === "thankyou" && <Thankyou amount={amount} />} */}
           {value === "thank" && <Thank  amount={amount} />}
           {value === "alipay" && <Alipay amount={amount} />}
           {value === "pay" && <Pay amount={amount} />}

@@ -3,6 +3,7 @@ import "./bank.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Left from "../../shared/icons/Left";
+import Names from "../../shared/Names";
 function Hkd(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -27,7 +28,7 @@ function Hkd(props) {
             </div>
           </div>
 
-          <div className="hdk__4g">5G</div>
+          <div className="hdk__4g">{Names.generateRandomSignal()}</div>
 
           <div className="styling__battery">
             <div className="battery">

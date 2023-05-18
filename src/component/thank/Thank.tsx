@@ -3,12 +3,15 @@ import "./Thank.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
+import Left from "../../shared/icons/Left";
 function Thank(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
   return (
     <div className="app__thank">
       <div className="thank__bg">
-        <div className="bg__time">{Dates.currentTime()}</div>
+        <div className="bg__time">{Dates.currentTime()}
+        <Left />
+        </div>
         <div className="bg__right">
           <div className="battery__">
             <label htmlFor="">{limit}%</label>
@@ -38,7 +41,10 @@ function Thank(props) {
           <div className="thank__right">
             <span>Personal Integrated Account HKD</span>
             <span>Savings</span>
-            <span>841-47{Number.generate4RandomNumber()}-{Number.generate3RandomNumber()}</span>
+            <span>
+              841-47{Number.generate4RandomNumber()}-
+              {Number.generate3RandomNumber()}
+            </span>
           </div>
         </div>
 
@@ -52,7 +58,9 @@ function Thank(props) {
 
         <div className="thanks__amount">
           <div className="thank__to">Amount</div>
-          <div className="thank__amount">{Number.hongkong(props.amount)}0 HKD</div>
+          <div className="thank__amount">
+            {Number.hongkong(props.amount)}0 HKD
+          </div>
         </div>
 
         <div className="thanks__fee">
@@ -72,7 +80,9 @@ function Thank(props) {
         <div className="thank__reference">
           <div className="thank__to">Reference number</div>
           <div className="thank__right">
-            <label className="number__right">N315768{Number.generate4RandomNumber()}</label>
+            <label className="number__right">
+              N315768{Number.generate4RandomNumber()}
+            </label>
           </div>
         </div>
         <div className="thank__date">
@@ -117,7 +127,9 @@ function Thank(props) {
             </div>
           </div>
         </div>
-        <div className="bottom__mobile">bottom</div>
+        <div className="bottom__mobile">
+          <img src="/thank/moo.png" alt="" width={219} />
+        </div>
       </div>
     </div>
   );

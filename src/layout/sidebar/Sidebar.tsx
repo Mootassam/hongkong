@@ -41,11 +41,8 @@ function Sidebar(props: any) {
           <label htmlFor=""> Write the Amount</label>
           <input
             type="number"
-            name=""
-            placeholder=""
-            id=""
             onChange={(e) => props.setAmount(e.target.value)}
-            maxLength={5}
+            max={5}
           />
         </div>
 

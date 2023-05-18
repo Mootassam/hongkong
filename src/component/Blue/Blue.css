@@ -91,7 +91,7 @@
   line-height: 29px;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   color: #092868;
 }
 .blue2__description {
@@ -109,7 +109,17 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  max-width: 350px ;
+  
 }
+.wrapp__text{ 
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+
 
 .blue__caractere {
   font-family: "Overpass";

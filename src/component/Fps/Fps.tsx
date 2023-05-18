@@ -4,6 +4,7 @@ import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Left from "../../shared/icons/Left";
 import Names from "../../shared/Names";
+import { AiOutlineWifi } from "react-icons/ai";
 function Fps(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
@@ -17,9 +18,10 @@ function Fps(props) {
             <Left />
           </div>
           <div className="fps__right">
+
+          <AiOutlineWifi color="606060" />
             <div className="battery__fps">
               <div className=""></div>
-
               <div className="data__fps">
                 <div className="fps__1"></div>
                 <div className="fps__2"></div>
