@@ -2,6 +2,7 @@ import React from "react";
 import "./Blue.css";
 import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
+import Names from "../../shared/Names";
 function Blue(props) {
   return (
     <div className="app__blue">
@@ -30,9 +31,15 @@ function Blue(props) {
             <span className="blue__doublecaractere" style={{ paddingRight: 5 }}>
               YU
             </span>
-            <span className="blue__one">W <p style={{fontSize:30}}> ••</p></span>
+            <span className="blue__one">
+              {Names.generateRandomCharacter()}{" "}
+              <p style={{ fontSize: 30 }}> ••</p>
+            </span>
           </div>
-          <span className="blue__one">M<p style={{fontSize:30 ,letterSpacing: -2}}>•••</p></span>
+          <span className="blue__one">
+            {Names.genereateRandomCharacter()}
+            <p style={{ fontSize: 30, letterSpacing: -2 }}>•••</p>
+          </span>
           <div className="blue__lastdescription">
             交易編號 MBKFT{Dates.generatedate()}D084783{" "}
           </div>
@@ -45,7 +52,9 @@ function Blue(props) {
       <div className="blue__detaill">
         <div className="first__detail">
           <div className="label__detail">收款人资料</div>
-          <div className="label__numb">10543{Number.generateRandom4Number()}</div>
+          <div className="label__numb">
+            10543{Number.generateRandom4Number()}
+          </div>
         </div>
 
         <div className="second__detail">
@@ -64,7 +73,7 @@ function Blue(props) {
 
         <div className="description__oneconenct">
           <div>
-            <span  className="chinese__text">經</span>
+            <span className="chinese__text">經</span>
             <span className="chinese__text" style={{ paddingRight: 7 }}>
               「轉數快]
             </span>

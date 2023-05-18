@@ -29,9 +29,7 @@ function Green(props) {
               <div
                 className="green__level"
                 style={{ width: `${limit}%` }}
-              >
-                
-              </div>
+              ></div>
             </div>
             <div className="green__bat"></div>
           </div>
@@ -80,8 +78,12 @@ function Green(props) {
         <div className="__firstline">
           <div className="gree__left">收款戶口</div>
           <div className="gree__right">
-            <span className="gree__name">{Names.generateRandomFullNameFromHongKong()}</span>
-            <span className="gree__number">012681{Number.generateRandom8Number()}</span>
+            <span className="gree__name">
+              {Names.generateRandomFullNameFromHongKong()}
+            </span>
+            <span className="gree__number">
+              012681{Number.generateRandom8Number()}
+            </span>
           </div>
         </div>
         <div className="__secondline">
@@ -96,7 +98,10 @@ function Green(props) {
           <div className="gree__left">支賬戶口</div>
           <div className="gree__right">
             <span className="gree__chinese">港元 储蓄</span>
-            <span className="gree__012">352-33{Number.generate4RandomNumber()}- {Number.generate3RandomNumber()}</span>
+            <span className="gree__012">
+              352-33{Number.generate4RandomNumber()}-{" "}
+              {Number.generate3RandomNumber()}
+            </span>
           </div>
         </div>
       </div>
@@ -105,7 +110,9 @@ function Green(props) {
         <div className="__secondline">
           <div className="gree__left">金額</div>
           <div className="gree__right">
-            <span className="date__chinise">港元 {Number.hongkong(props.amount)}</span>
+            <span className="date__chinise">
+              港元 {Number.hongkong(props.amount)}
+            </span>
           </div>
         </div>
         <div className="__secondline">

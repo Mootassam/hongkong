@@ -90,7 +90,8 @@ class Names {
 
     const abbreviatedFirstName =
       firstName.slice(0, 1) + "*".repeat(numAsterisks);
-    const abbreviatedLastName = lastName.slice(0, 1) + "*".repeat(num2Asterisks);
+    const abbreviatedLastName =
+      lastName.slice(0, 1) + "*".repeat(num2Asterisks);
 
     const fullName =
       Math.random() < 0.5
@@ -104,6 +105,19 @@ class Names {
     const texts = ["4G", "5G", "LET"];
     const randomIndex = Math.floor(Math.random() * texts.length);
     return texts[randomIndex];
+  }
+
+  static generateRandomCharacter() {
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    const randomCharacter = characters.charAt(randomIndex);
+    return randomCharacter;
+  }
+  static genereateRandomCharacter() {
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    const randomCharacter = characters.charAt(randomIndex);
+    return randomCharacter;
   }
 }
 

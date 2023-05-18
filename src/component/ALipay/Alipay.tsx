@@ -11,7 +11,13 @@ function Alipay(props) {
     <div className="app__alipay">
       <div className="alipay">
         <div className="alipay__header">
-          <div className="alipay__time">{Dates.currentTime()}</div>
+          <div className="alipay__time">{Dates.currentTime()}
+          
+          
+          <Left />
+          
+          
+          </div>
           <div className="alipay__right">
             <div className="alipay__data">
               <div className="alipay__1"></div>
