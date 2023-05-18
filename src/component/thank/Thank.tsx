@@ -7,7 +7,28 @@ import Left from "../../shared/icons/Left";
 import { MdBluetoothConnected } from "react-icons/md";
 import { AiOutlineWifi } from "react-icons/ai";
 function Thank(props) {
+  
+
+  
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
+  const CheckstatusBattery = () => {
+    let background = "";
+
+    if (limit >= 20) {
+      background = "#fdd60c";
+    }
+
+    if (limit <= 20) {
+      background = "#FD3731";
+    }
+
+    if (limit >= 40) {
+      background = "#fff";
+    }
+
+    return background;
+  };
   return (
     <div className="app__thank">
       <div className="thank__bg">
@@ -36,7 +57,7 @@ function Thank(props) {
               <div className="thank__battery">
                 <div
                   className="level__thank"
-                  style={{ height: `${limit}%` }}
+                  style={{ height: `${limit}%`, background: CheckstatusBattery(), }}
                 ></div>
               </div>
             </div>
