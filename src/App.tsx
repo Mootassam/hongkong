@@ -49,29 +49,29 @@ function App() {
           size={value}
         />
         <div className="content" ref={divRef}>
-          {value === "800" && size === "small" && <Hkd customer={customer} amount={amount} />}
-          { value === "800" && size === "large" && <Bank customer={customer} amount={amount} />}
-          {value === "fps" && <Fps customer={customer} amount={amount} />}
+          {value === "800" && size === "small" && <Hkd  amount={amount} />}
+          { value === "800" && size === "large" && <Bank  amount={amount} />}
+          {value === "fps" && <Fps  amount={amount} />}
           {value === "thankyou" && <Thankyou amount={amount} />}
           {value  === "thank" && <Thank />}
-          {value === "alipay" && <Alipay customer={customer} amount={amount} />}
-          {value === "pay" && <Pay customer={customer} amount={amount} />}
-          {value === "livi" && <LiviBank customer={customer} amount={amount} />}
+          {value === "alipay" && <Alipay  amount={amount} />}
+          {value === "pay" && <Pay  amount={amount} />}
+          {value === "livi" && <LiviBank  amount={amount} />}
           {value === "BankChina" && (
-            <BankChina customer={customer} amount={amount} />
+            <BankChina  amount={amount} />
           )}
           {/* {value === "small" && <SmallTransfer />} */}
-          {value === "review" && <Review customer={customer} amount={amount} />}
+          {value === "review" && <Review  amount={amount} />}
           {value === "hangseng" && (
-            <Hangseng customer={customer} amount={amount} />
+            <Hangseng  amount={amount} />
           )}
-          {value === "fly1" && <Fly customer={customer} amount={amount} />}
-          {value === "scpay" && <Scpay customer={customer} amount={amount} />}
-          {value === "chan" && <Chan customer={customer} amount={amount} />}
-          {value === "fly2" && <Fly2 customer={customer} amount={amount} />}
-          {value === "fly3" && <Fly3 customer={customer} amount={amount} />}
-          {value === "blue" && <Blue customer={customer} amount={amount} />}
-          {value === "green" && <Green />}
+          {value === "fly1" && <Fly  amount={amount} />}
+          {value === "scpay" && <Scpay  amount={amount} />}
+          {value === "chan" && <Chan  amount={amount} />}
+          {value === "fly2" && <Fly2  amount={amount} />}
+          {value === "fly3" && <Fly3  amount={amount} />}
+          {value === "blue" && <Blue  amount={amount} />}
+          {value === "green" && <Green  amount={amount}/>}
         </div>
       </div>
     </>

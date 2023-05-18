@@ -2,7 +2,9 @@ import React from "react";
 import "./green.css";
 import Dates from "../../shared/dates";
 import Left from "../../shared/icons/Left";
-function Green() {
+import Number from "../../shared/Number";
+import Names from "../../shared/Names";
+function Green(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
 
   return (
@@ -78,8 +80,8 @@ function Green() {
         <div className="__firstline">
           <div className="gree__left">收款戶口</div>
           <div className="gree__right">
-            <span className="gree__name">Ali Pervaz</span>
-            <span className="gree__number">01268110251858</span>
+            <span className="gree__name">{Names.generateRandomFullNameFromHongKong()}</span>
+            <span className="gree__number">012681{Number.generateRandom8Number()}</span>
           </div>
         </div>
         <div className="__secondline">
@@ -94,7 +96,7 @@ function Green() {
           <div className="gree__left">支賬戶口</div>
           <div className="gree__right">
             <span className="gree__chinese">港元 储蓄</span>
-            <span className="gree__012">352-331417- 888</span>
+            <span className="gree__012">352-33{Number.generate4RandomNumber()}- {Number.generate3RandomNumber()}</span>
           </div>
         </div>
       </div>
@@ -103,13 +105,13 @@ function Green() {
         <div className="__secondline">
           <div className="gree__left">金額</div>
           <div className="gree__right">
-            <span className="date__chinise">港元 500.00</span>
+            <span className="date__chinise">港元 {Number.hongkong(props.amount)}</span>
           </div>
         </div>
         <div className="__secondline">
           <div className="gree__left">轉賬日期</div>
           <div className="gree__right">
-            <span className="date__chinise">即時 30/03/2023</span>
+            <span className="date__chinise">即時 {Dates.hangSeng()}</span>
           </div>
         </div>
         <div className="last__line">
