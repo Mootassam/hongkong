@@ -31,7 +31,7 @@ function App() {
     Screenshot.handleCaptureScreenshot(divRef);
   };
   const [value, setValue] = useState("alipay");
-  const [amount, setAmount] = useState(200);
+  const [amount, setAmount] = useState(100);
   const [customer, setCustomer] = useState("Vivian Yip");
   const [size, setSize] = useState("small");
 

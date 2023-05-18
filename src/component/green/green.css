@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 13px 19px 0 17px;
-
 }
 
 .green__left > span {
@@ -22,7 +21,6 @@
   font-weight: 500;
   font-size: 12.2px;
   line-height: 14px;
-
 }
 
 .greeen__battery {
@@ -48,6 +46,7 @@
   align-content: center;
   align-items: center;
   top: 0;
+  position: relative;
 }
 
 .numb__ {
@@ -459,14 +458,13 @@
 
 /* styling the battery */
 
-.green__left{ 
+.green__left {
   height: 14px;
-display: flex;
-align-items: center;
-gap:3px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
   color: #373737 !important;
 }
-
 
 .green__time {
   font-family: "Roboto";
@@ -475,4 +473,27 @@ gap:3px;
   font-size: 12.2px;
   line-height: 14px;
   color: #373737 !important;
+}
+
+.green__level {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 9px;
+  color: #000000;
+ 
+}
+.limit__number {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 9px;
+color: #000000;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 4.3px;
 }

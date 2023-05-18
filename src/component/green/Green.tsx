@@ -29,7 +29,10 @@ function Green(props) {
               <div
                 className="green__level"
                 style={{ width: `${limit}%` }}
-              ></div>
+              >
+                </div>
+                <span  className="limit__number">
+                 {limit} </span>
             </div>
             <div className="green__bat"></div>
           </div>
