@@ -68,6 +68,12 @@ class Dates {
     return date;
   }
 
+  static getCurrentDate() {
+    const currentDate = moment().format('DD MMM YYYY');
+  
+    return currentDate;
+  }
+
 
 
 }

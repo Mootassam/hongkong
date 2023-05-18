@@ -5,16 +5,13 @@ import Number from "../../shared/Number";
 import Names from "../../shared/Names";
 function Thankyou(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
-
   return (
     <div className="app__thankyou">
       <div className="thankyou__header">
         <div className="header__battery">
           <div className="left__">{Dates.currentTime()}</div>
-
           <div className="right__">
             <div className="right__data"></div>
-
             <div className="data__cnx">
               <div className="cnx__1"></div>
               <div className="cnx__2"></div>

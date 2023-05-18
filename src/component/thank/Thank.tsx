@@ -1,13 +1,17 @@
 import React from "react";
 import "./Thank.css";
-function Thank() {
+import Dates from "../../shared/dates";
+import Number from "../../shared/Number";
+import Names from "../../shared/Names";
+function Thank(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
   return (
     <div className="app__thank">
       <div className="thank__bg">
-        <div className="bg__time">16:03</div>
+        <div className="bg__time">{Dates.currentTime()}</div>
         <div className="bg__right">
           <div className="battery__">
-            <label htmlFor="">35%</label>
+            <label htmlFor="">{limit}%</label>
           </div>
         </div>
       </div>
@@ -34,21 +38,21 @@ function Thank() {
           <div className="thank__right">
             <span>Personal Integrated Account HKD</span>
             <span>Savings</span>
-            <span>841-479058-833</span>
+            <span>841-47{Number.generate4RandomNumber()}-{Number.generate3RandomNumber()}</span>
           </div>
         </div>
 
         <div className="thanks__to">
           <div className="thank__to">To</div>
           <div className="thank__right">
-            <span>YU W** M***</span>
-            <span>FPS ID: 105430979</span>
+            <span>{Names.generateRandomFullName()}</span>
+            <span>FPS ID: 10543{Number.generate4RandomNumber()}</span>
           </div>
         </div>
 
         <div className="thanks__amount">
           <div className="thank__to">Amount</div>
-          <div className="thank__amount">800.00 HKD</div>
+          <div className="thank__amount">{Number.hongkong(props.amount)}0 HKD</div>
         </div>
 
         <div className="thanks__fee">
@@ -68,27 +72,25 @@ function Thank() {
         <div className="thank__reference">
           <div className="thank__to">Reference number</div>
           <div className="thank__right">
-            <label className="number__right">N31576819968</label>
+            <label className="number__right">N315768{Number.generate4RandomNumber()}</label>
           </div>
         </div>
         <div className="thank__date">
           <div className="thank__to">Date and time </div>
           <div className="thank__right">
-            <span className="date__mar">15 Mar 2023</span>
-            <span className="time__mar">16:03 HKT</span>
+            <span className="date__mar">{Dates.getCurrentDate()}</span>
+            <span className="time__mar">{Dates.currentTime()} HKT</span>
           </div>
         </div>
       </div>
 
       <div className="thank__bottom">
         <img src="/thank/bartop.png" alt="" />
-
         <div className="bottom__another">
           <div className="button__another">
             <label htmlFor="">Make another transfer</label>
           </div>
         </div>
-
         <div className="bottom__menue">
           <img src="/thank/barthank.png" alt="" />
 
