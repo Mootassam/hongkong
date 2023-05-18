@@ -4,17 +4,42 @@ import Dates from "../../shared/dates";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
 import Left from "../../shared/icons/Left";
+import { MdBluetoothConnected } from "react-icons/md";
+import { AiOutlineWifi } from "react-icons/ai";
 function Thank(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
   return (
     <div className="app__thank">
       <div className="thank__bg">
-        <div className="bg__time">{Dates.currentTime()}
-        <Left />
+        <div className="bg__time">
+          {Dates.currentTime()}
+          <Left />
         </div>
         <div className="bg__right">
+          <div className="cnx__white">
+            <MdBluetoothConnected color="white" size={13} />
+            <AiOutlineWifi color="white" size={15} />
+            <div className="data__thank">
+              <div className="__thank1"></div>
+              <div className="__thank2"></div>
+              <div className="__thank3"></div>
+              <div className="__thank4"></div>
+              <div className="__thank5"></div>
+            </div>
+          </div>
+
           <div className="battery__">
             <label htmlFor="">{limit}%</label>
+
+            <div className="thank__batter">
+              <div className="border__top"></div>
+              <div className="thank__battery">
+                <div
+                  className="level__thank"
+                  style={{ height: `${limit}%` }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
