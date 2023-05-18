@@ -10,7 +10,7 @@ import twitter from "./Twitter";
 import { BsImage } from "react-icons/bs";
 import { AiFillAlipayCircle, AiFillWechat } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
-import {RiSnapchatLine} from 'react-icons/ri'
+import {RiSnapchatLine} from  'react-icons/ri'
 function Left() {
   let whats = ExtractItem.getItem(whatsApp);
   let teleg = ExtractItem.getItem(telegram);
@@ -20,7 +20,6 @@ function Left() {
   let alipay = <AiFillAlipayCircle size={13} />
   let tiktok = <FaTiktok size={11} />
   let snapchat = <RiSnapchatLine size={13} />
-
   let twitt = ExtractItem.getItem(twitter);
   let data = ExtractItem.convertToArray(
     whats,
