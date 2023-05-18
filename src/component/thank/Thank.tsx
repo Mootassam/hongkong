@@ -84,7 +84,7 @@ function Thank(props) {
         <div className="thanks__amount">
           <div className="thank__to">Amount</div>
           <div className="thank__amount">
-            {Number.hongkong(props.amount)}0 HKD
+            {Number.hongkong(props.amount)} HKD
           </div>
         </div>
 
