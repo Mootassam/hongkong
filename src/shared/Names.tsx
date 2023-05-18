@@ -102,7 +102,7 @@ class Names {
   };
 
   static generateRandomSignal() {
-    const texts = ["4G", "5G", "LET"];
+    const texts = ["4G", "5G", "LTE"];
     const randomIndex = Math.floor(Math.random() * texts.length);
     return texts[randomIndex];
   }

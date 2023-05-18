@@ -2,15 +2,36 @@ import React from "react";
 import "./scpay.css";
 import Number from "../../shared/Number";
 import Names from "../../shared/Names";
+import Dates from "../../shared/dates";
 function Scpay(props) {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__scpay">
       <div className="scpay__header">
-        <div></div>
-        <div>
-          <img src="scpay/close.png" alt="" width={25} height={26} />
+        <span className="spay__time">{Dates.currentTime()}</span>
+
+        <div className="scpay__right">
+          <div className="spacy__data">
+            <div className="spacy__1"></div>
+            <div className="spacy__2"></div>
+            <div className="spacy__3"></div>
+            <div className="spacy__4"></div>
+          </div>
+          <div className="data__scpay">4G</div>
+
+          <div className="bbaa__scpay">
+            <div className="scapy__battery">
+              <div className="level__scapy" style={{ width: `${limit}%` }}>
+                {" "}
+              </div>
+            </div>
+
+            <div className="scpay__border"></div>
+          </div>
         </div>
       </div>
+
       <div className="scpay__logo">
         <img src="/scpay/logo.png" alt="" width={387} />
       </div>

@@ -26,6 +26,7 @@ function Alipay(props) {
               <div className="alipay__4"></div>
             </div>
             <div className="alipay__namedata">{Names.generateRandomSignal()}</div>
+            <div>
             <div className="battt__">
               <div className="alipay__battery">
                 <div
@@ -37,6 +38,7 @@ function Alipay(props) {
               </div>
 
               <div className="alipay__borderbattery"></div>
+            </div>
             </div>
           </div>
         </div>
