@@ -16,9 +16,9 @@ function Left() {
   let teleg = ExtractItem.getItem(telegram);
   let instag = ExtractItem.getItem(instagram);
   let message = ExtractItem.getItem(Message);
-  let wechat = <AiFillWechat />
-  let alipay = <AiFillAlipayCircle />
-  let tiktok = <FaTiktok />
+  let wechat = <AiFillWechat  />
+  let alipay = <AiFillAlipayCircle size={13} />
+  let tiktok = <FaTiktok size={11} />
 
   let twitt = ExtractItem.getItem(twitter);
   let data = ExtractItem.convertToArray(

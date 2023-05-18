@@ -5,7 +5,7 @@ const whatsApp = [
   {
     component: <FaWhatsapp size={13} />,
   },
-  { component: <BsWhatsapp size={13} /> },
+
   { component: <IoLogoWhatsapp size={13} /> },
 ];
 

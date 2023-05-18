@@ -1,11 +1,17 @@
 import React from "react";
 import "./green.css";
+import Dates from "../../shared/dates";
+import Left from "../../shared/icons/Left";
 function Green() {
+  const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
+
   return (
     <div className="app__green">
       <div className="green__header">
         <div className="green__left">
-          <span>20:04</span>
+          <span className="green__time">{Dates.currentTime()}</span>
+
+          <Left />
         </div>
         <div className="green__right">
           <div className="green__data">
@@ -17,7 +23,14 @@ function Green() {
           </div>
 
           <div className="greeen__battery">
-            <div className="green__border"></div>
+            <div className="green__border">
+              <div
+                className="green__level"
+                style={{ width: `${limit}%` }}
+              >
+                
+              </div>
+            </div>
             <div className="green__bat"></div>
           </div>
         </div>
