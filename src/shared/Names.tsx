@@ -119,6 +119,56 @@ class Names {
     const randomCharacter = characters.charAt(randomIndex);
     return randomCharacter;
   }
+
+  static generateRandomName() {
+    const firstNames = [
+      "Chung",
+      "Hoi",
+      "Ka",
+      "Lai",
+      "Man",
+      "Pak",
+      "Siu",
+      "Wai",
+      "Yan",
+      "Yiu",
+    ];
+    const lastNames = [
+      "Chan",
+      "Cheung",
+      "Ho",
+      "Lau",
+      "Lee",
+      "Leung",
+      "Ng",
+      "Wong",
+      "Yau",
+      "Yu",
+    ];
+    const thirdNames = [
+      "Chow ",
+      "Lam",
+      "Luk",
+      "Ma",
+      "Ngai",
+      "Poon",
+      "Shek",
+      "Sin",
+      "So",
+      "Tang",
+    ];
+    const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+    const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+    const thirdName = lastNames[Math.floor(Math.random() * thirdNames.length)];
+
+    const numAsterisks1 = Math.floor(Math.random() * 3) + 1; // Random number of asterisks (1 to 6)
+    const numAsterisks2 = Math.floor(Math.random() * 5) + 1; // Random number of asterisks (1 to 4)
+    const formattedName = `${firstName} ${lastName.charAt(0)}${"*".repeat(
+      numAsterisks1
+    )} ${thirdName.charAt(0)}${"*".repeat(numAsterisks2)}`;
+
+    return formattedName;
+  }
 }
 
 export default Names;

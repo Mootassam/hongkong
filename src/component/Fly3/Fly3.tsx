@@ -57,7 +57,7 @@ function Fly3(props) {
           </div>
           <div className="detaill__fly3 __payto">
             <div className="detaill__fly3__left">Pay to</div>
-            <div className="detaill__fly3__right">{Names.generateRandomFullNameFromHongKong()}</div>
+            <div className="detaill__fly3__right">{Names.generateRandomName()}</div>
           </div>
           <div className="detaill__fly3 __proxyid ">
             <div className="detaill__fly3__left">FPS Proxy ID</div>
@@ -69,7 +69,6 @@ function Fly3(props) {
           </div>
         </div>
       </div>
-
       <div className="fly__bottomfly3">
         <div className="done__fly3">
           <span> Done</span>
