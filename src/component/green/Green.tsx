@@ -29,14 +29,11 @@ function Green() {
           <img src="/Green/phone.png" alt="" width={15} />
         </div>
       </div>
-
       <img src="/Green/bar.png" alt="" />
-
       <div className="green__content">
         <div className="green__circle">
           <img src="/Green/check.png" width={21} />
         </div>
-
         <div className="green__title">
           <span className="title__green">已完成交易</span>
           <span className="green__description">參考編號 N33008120299</span>
@@ -54,15 +51,67 @@ function Green() {
           <img src="/Green/heart.png" alt="" width={18} height={15} />
           <label htmlFor="">常用收款人</label>
         </div>
-        <div></div>
-        <div className="chinese__heaert">
-          <img src="/Green/save.png" alt="" width={18}  height={19}/>
+        <div className="hor__bar"></div>
+        <div className="chinese__save">
+          <img src="/Green/save.png" alt="" width={18} height={19} />
           <label htmlFor="">儲存圖像</label>
         </div>
+      </div>
 
-        <div className="chinese_save"></div>
+      <div className="small__bar"></div>
+      <div className="chinese__grey"></div>
+
+      <div className="gree__details">
+        <div className="__firstline">
+          <div className="gree__left">收款戶口</div>
+          <div className="gree__right">
+            <span className="gree__name">Ali Pervaz</span>
+            <span className="gree__number">01268110251858</span>
+          </div>
+        </div>
+        <div className="__secondline">
+          <div className="gree__left">收款銀行</div>
+          <div className="gree__right">
+            <span className="gree__chinese">中国银行 香港 有限公司 </span>
+            <span className="gree__numberchinese">(012)</span>
+          </div>
+        </div>
+
+        <div className="__thirdline">
+          <div className="gree__left">支賬戶口</div>
+          <div className="gree__right">
+            <span className="gree__chinese">港元 储蓄</span>
+            <span className="gree__012">352-331417- 888</span>
+          </div>
+        </div>
+      </div>
+      <div className="chinese__grey"></div>
+      <div className="gree__detailss">
+        <div className="__secondline">
+          <div className="gree__left">金額</div>
+          <div className="gree__right">
+            <span className="date__chinise">港元 500.00</span>
+          </div>
+        </div>
+        <div className="__secondline">
+          <div className="gree__left">轉賬日期</div>
+          <div className="gree__right">
+            <span className="date__chinise">即時 30/03/2023</span>
+          </div>
+        </div>
+        <div className="last__line">
+          <div className="last__linetext">致收款人訊息 / 賬單備考</div>
+          <div></div>
+        </div>
       </div>
       <div className="green__bottom">
+        <img
+          src="/Green/green.png"
+          alt=""
+          width={51}
+          height={51}
+          className="green__logo"
+        />
         <div className="green__white">
           <div className="green__text1">
             <span>返回轉賬及付款</span>
@@ -71,7 +120,6 @@ function Green() {
             <span>進行另一筆轉賬</span>
           </div>
         </div>
-
         <div className="bottom__black">
           <img src="/Green/mobile.png" alt="" width={180} />
         </div>

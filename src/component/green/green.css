@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 .app__green {
   width: 360px;
   height: 800px;
@@ -97,6 +99,10 @@
 .green__bottom {
   position: absolute;
   bottom: 0;
+  background-image: url("/public/Green/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bottom__black {
@@ -108,15 +114,14 @@
 }
 
 .green__white {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
+  width: 100%;
   padding: 16px 15px;
   display: flex;
   flex-direction: column;
   gap: 17px;
 }
 .green__text1 {
-  width: 330px;
+  width: 320px;
   height: 44px;
   background: #008945;
   border-radius: 7px;
@@ -134,7 +139,7 @@
 }
 
 .green__text2 {
-  width: 330px;
+  width: 320px;
   height: 44px;
   border: 1px solid #b3b3b3;
   border-radius: 5px;
@@ -156,6 +161,7 @@
 .green__content {
   padding-top: 30px;
   padding-left: 32px;
+  padding-bottom: 32px;
   display: flex;
   gap: 21px;
 }
@@ -236,10 +242,10 @@
 
 .chinese__logo {
   padding-top: 11px;
-  width: 253px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .chinese__logo > div {
@@ -254,6 +260,172 @@
   font-weight: 400;
   font-size: 11.2px;
   line-height: 13px;
-
   color: #36773d;
+}
+
+.chinese__heaert {
+  padding-right: 49px;
+}
+
+.chinese__save {
+  padding-left: 59px;
+}
+
+.chinese__save > label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.2px;
+  line-height: 13px;
+  color: #36773d;
+}
+
+/* styling the grey text */
+
+.chinese__grey {
+  width: 360px;
+  height: 7px;
+  background: #ededed;
+}
+
+.small__bar {
+  margin-top: 8px;
+  width: 360px;
+  height: 1px;
+  background: #d9d9d9;
+}
+
+.gree__left {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #4a4a4a;
+}
+
+.gree__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #272727;
+}
+.gree__number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.2px;
+  line-height: 15px;
+
+  color: #626262;
+}
+.gree__details {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 15px 11px 15px;
+}
+.gree__detailss {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 0px 15px;
+}
+
+.gree__details > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gree__detailss > div {
+  display: flex;
+  justify-content: space-between;
+}
+.gree__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.__firstline {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.__secondline {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.gree__chinese {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #141414;
+}
+
+.gree__numberchinese {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #141414;
+}
+
+.__thirdline {
+  padding-top: 16px;
+}
+.gree__012 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.7px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #626262;
+}
+
+.last__linetext {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #4a4a4a;
+}
+
+.last__line {
+  padding-top: 16px;
+}
+
+.hor__bar {
+  width: 0px;
+  height: 25px;
+  border: 0.8px solid #e1e1e1;
+}
+
+.date__chinise {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #141414;
+}
+.green__logo {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  right: 15px;
+  opacity: 0.8;
 }
