@@ -97,7 +97,7 @@ function Thank(props) {
         <div className="thanks__to">
           <div className="thank__to">To</div>
           <div className="thank__right">
-            <span>{Names.generateRandomFullName()}</span>
+            <span>{Names.generateRandomName()}</span>
             <span>FPS ID: 10543{Number.generate4RandomNumber()}</span>
           </div>
         </div>

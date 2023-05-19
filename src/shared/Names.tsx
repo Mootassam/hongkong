@@ -56,6 +56,11 @@ class Names {
     return fullName;
   }
 
+  static extractFirstTwocharacters(){ 
+    let str  =this.generateRandomFullName()
+    return str.substring(0, 2);
+  }
+
   static generateRandomFullName = () => {
     const firstNames = [
       "Chung",
