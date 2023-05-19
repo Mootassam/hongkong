@@ -168,7 +168,7 @@ function Thank(props) {
               <label htmlFor="">Budget</label>
             </div>
             <div>
-              <img src="/thank/support.png" alt="" width={28} />
+              <img src="/thank/support.png" alt="" width={21} />
               <label htmlFor="">Support</label>
             </div>
           </div>
