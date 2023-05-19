@@ -1,5 +1,4 @@
 import { useRef, useState, useEffect } from "react";
-
 import "./App.css";
 import Bank from "./component/bank/bank";
 import Header from "./layout/Header";

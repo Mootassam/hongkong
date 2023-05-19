@@ -12,11 +12,7 @@ function Alipay(props) {
       <div className="alipay">
         <div className="alipay__header">
           <div className="alipay__time">{Dates.currentTime()}
-          
-          
           <Left />
-          
-          
           </div>
           <div className="alipay__right">
             <div className="alipay__data">
@@ -36,7 +32,6 @@ function Alipay(props) {
                 ></div>
               </div>
 
-              <div className="alipay__borderbattery"></div>
             </div>
           </div>
         </div>

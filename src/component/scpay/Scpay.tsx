@@ -18,7 +18,7 @@ function Scpay(props) {
             <div className="spacy__3"></div>
             <div className="spacy__4"></div>
           </div>
-          <div className="data__scpay">4G</div>
+          <div className="data__scpay">{Names.generateRandomSignal()}</div>
 
           <div className="bbaa__scpay">
             <div className="scapy__battery">

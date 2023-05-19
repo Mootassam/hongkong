@@ -12,7 +12,6 @@ function Chan(props) {
         <div className="chan__left">
           <div className="chan__time">{Dates.currentTime()}</div>
         </div>
-
         <div className="chan__right">
           <div className="data__chan">
             <div className="chan__1"></div>
