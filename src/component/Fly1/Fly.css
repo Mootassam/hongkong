@@ -142,7 +142,7 @@
 
 .fly__right {
   display: flex;
-  align-items: baseline;
+  align-items: inherit;
   gap: 3px;
 }
 .name__battery {

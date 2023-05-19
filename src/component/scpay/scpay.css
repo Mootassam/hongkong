@@ -63,10 +63,7 @@
   color: #ffffff;
 }
 
-.scpay__right {
-  display: flex;
-  align-items: center;
-}
+
 .spacy__data {
   display: flex;
   align-items: flex-end;
@@ -92,8 +89,8 @@
 
 .scpay__right {
   display: flex;
-  align-items: baseline;
-  gap: 3px;
+  align-items: inherit;
+  gap: 3.2px;
 }
 
 /* stlyling the battery */
@@ -101,7 +98,7 @@
   width: 21px;
   height: 10px;
   border: 1px solid #61739b;
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 1px;
 }
 
