@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./sidebar.css";
-import optionBank from "../../data/OptionBank";
+import optionBank from "../../../data/OptionBank";
 function Sidebar(props: any) {
   useEffect(() => {}, [props.value]);
 
@@ -36,7 +36,6 @@ function Sidebar(props: any) {
             </select>
           </div>
         )}
-
         <div className="form__group">
           <label htmlFor=""> Write the Amount</label>
           <input
@@ -45,8 +44,6 @@ function Sidebar(props: any) {
             maxLength={7}
           />
         </div>
-
-      
       </div>
       <div className="app__screenshot" onClick={() => props.screenshot()}></div>
     </div>
