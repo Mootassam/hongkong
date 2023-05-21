@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoutes from "./PublicRoutes";
 import routes from "../routes";
-import CustomLoadable from '../../view/shared/CustomLoadable';
+import CustomLoadable from "../../view/shared/CustomLoadable";
 
 function RoutesComponent() {
   return (
@@ -23,7 +23,18 @@ function RoutesComponent() {
           exact
           key={route.path}
           path={route.path}
-            component={CustomLoadable({
+          component={CustomLoadable({
+            loader: route.loader,
+          })}
+        />
+      ))}
+
+      {routes.simpleRoutes.map((route) => (
+        <Route
+          key={route.path}
+          exact
+          path={route.path}
+          component={CustomLoadable({
             loader: route.loader,
           })}
         />
