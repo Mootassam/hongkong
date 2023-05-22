@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import PublicRoutes from "./PublicRoutes";
+import PublicRoutes from "./PublicRoute";
 import routes from "../routes";
 import CustomLoadable from "../../view/shared/CustomLoadable";
 

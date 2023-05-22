@@ -1,46 +1,53 @@
 import React from "react";
 import "./Styles/styles.css";
+import { useDispatch, useSelector } from "react-redux";
+
+
 function SigninPage() {
+  const dispatch = useDispatch();
+
   return (
     <div className="app__singnin">
-      <div className="singnin__login">
-        <div className="singnin__left">
-          <div className="left__top">
-            <span className="cloud">登录到 Home Cloud</span>
-            <span className="cloud__text">
-              {" "}
-              简单轻松，一步上云，立刻登录到 Home Cloud
-            </span>
-          </div>
-
-          <div className="singnin__form">
-            <div className="input__form">
-              <input type="text" placeholder="Email" />
+      <div className="singin__page">
+        <div className="singin__header">
+          <h1>Sign In</h1>
+          <span>Let’s build something greate</span>
+        </div>
+        <form  >
+          <div className="singin__form">
+            <div className="singin__group">
+              <label htmlFor="">E-mail or phone number</label>
+              <input
+                type="text"
+                placeholder="Enter your Email"
+                className="singin__input"
+              />
             </div>
-            <div className="input__form">
-              <input type="text" placeholder="Password" />
-            </div>
-          </div>
 
-          <div className="signin__buttons">
+            <div className="singin__group">
+              <label htmlFor="">Password</label>
+              <input
+                type="text"
+                placeholder="Enter your passowrd"
+                className="singin__input"
+              />
+            </div>
+
             <div className="singin__button">
-              <span>立刻登录</span>
+              <span>Login</span>
             </div>
 
-            <div className="link__signup">
-                
-                <span>
-                
-                没有账户吗？
-                
-                </span>
-                </div>
+            <div className="singin__donthaveaccount">
+              <span>
+                Don’t have an account?{" "}
+                <label htmlFor="" className="signup__link">
+                  {" "}
+                  Sign up
+                </label>
+              </span>
+            </div>
           </div>
-        </div>
-
-        <div className="singin__right">
-          <img src="/auth/auth.png" alt="" />
-        </div>
+        </form>
       </div>
     </div>
   );
