@@ -1,11 +1,18 @@
 import React from "react";
-import SigninPage from "../Auth/SigninPage";
-import { Route } from "react-router-dom";
-function PublicRoute(props) {
+import { Route, Redirect } from "react-router-dom";
+import PermissionChecker from "../../modules/auth/permissionChecker";
+
+function PublicRoute({ component: Component, currentTenant, currentUser, ...rest }) {
+  const permissionChecker = new PermissionChecker(currentTenant, currentUser);
+
   return (
     <Route
+      {...rest}
       render={(props) => {
-        return <SigninPage />;
+        if (permissionChecker.isAuthenticated) {
+          return <Redirect to="/" />;
+        }
+        return <Component {...props} />;
       }}
     />
   );

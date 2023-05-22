@@ -170,53 +170,8 @@ const selectCurrentSettings = createSelector(
   },
 );
 
-const selectBackgroundImageUrl = createSelector(
-  [selectCurrentTenant],
-  // The idea of this method is to refresh
-  // where is using if the current tenant changes
-  (currentTenant) => {
-    if (
-      tenantSubdomain.isEnabled &&
-      tenantSubdomain.isRootDomain
-    ) {
-      return null;
-    }
 
-    const settings = AuthCurrentTenant.getSettings();
 
-    return _get(
-      settings,
-      'backgroundImageUrl',
-      _get(
-        settings,
-        'backgroundImages[0].downloadUrl',
-        null,
-      ),
-    );
-  },
-);
-
-const selectLogoUrl = createSelector(
-  [selectCurrentTenant],
-  // The idea of this method is to refresh
-  // where is using if the current tenant changes
-  (currentTenant) => {
-    if (
-      tenantSubdomain.isEnabled &&
-      tenantSubdomain.isRootDomain
-    ) {
-      return null;
-    }
-
-    const settings = AuthCurrentTenant.getSettings();
-
-    return _get(
-      settings,
-      'logoUrl',
-      _get(settings, 'logos[0].downloadUrl', null),
-    );
-  },
-);
 
 const authSelectors = {
   selectLoadingPasswordResetEmail,
@@ -241,8 +196,7 @@ const authSelectors = {
   selectCurrentTenant,
   selectInvitedTenants,
   selectCurrentSettings,
-  selectLogoUrl,
-  selectBackgroundImageUrl,
+
 };
 
 export default authSelectors;

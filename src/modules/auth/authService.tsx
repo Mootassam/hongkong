@@ -1,50 +1,36 @@
-import authAxios from '../../modules/shared/axios/authAxios';
-import { AuthToken } from '../../modules/auth/authToken';
-import AuthCurrentTenant from '../../modules/auth/authCurrentTenant';
-import AuthInvitationToken from '../../modules/auth/authInvitationToken';
-import { tenantSubdomain } from '../tenant/tenantSubdomain';
+import authAxios from "../../modules/shared/axios/authAxios";
+import { AuthToken } from "../../modules/auth/authToken";
+import AuthCurrentTenant from "../../modules/auth/authCurrentTenant";
+import AuthInvitationToken from "../../modules/auth/authInvitationToken";
+import { tenantSubdomain } from "../tenant/tenantSubdomain";
 
 export default class AuthService {
   static async sendEmailVerification() {
     const response = await authAxios.post(
-      '/auth/send-email-address-verification-email',
+      "/auth/send-email-address-verification-email",
       {
-        tenantId: tenantSubdomain.isSubdomain
-          ? AuthCurrentTenant.get()
-          : undefined,
+        tenantId: AuthCurrentTenant.get(),
       }
     );
-
     return response.data;
   }
 
   static async sendPasswordResetEmail(email) {
-    const response = await authAxios.post(
-      '/auth/send-password-reset-email',
-      {
-        email,
-        tenantId: tenantSubdomain.isSubdomain
-          ? AuthCurrentTenant.get()
-          : undefined,
-      },
-    );
-
+    const response = await authAxios.post("/auth/send-password-reset-email", {
+      email,
+      tenantId: AuthCurrentTenant.get(),
+    });
     return response.data;
   }
 
-  static async registerWithEmailAndPassword(
-    email,
-    password,
-  ) {
+  static async registerWithEmailAndPassword(email, password) {
     const invitationToken = AuthInvitationToken.get();
 
-    const response = await authAxios.post('/auth/sign-up', {
+    const response = await authAxios.post("/auth/sign-up", {
       email,
       password,
       invitationToken,
-      tenantId: tenantSubdomain.isSubdomain
-        ? AuthCurrentTenant.get()
-        : undefined,
+      tenantId: AuthCurrentTenant.get(),
     });
 
     AuthInvitationToken.clear();
@@ -55,13 +41,11 @@ export default class AuthService {
   static async signinWithEmailAndPassword(email, password) {
     const invitationToken = AuthInvitationToken.get();
 
-    const response = await authAxios.post('/auth/sign-in', {
+    const response = await authAxios.post("/auth/sign-in", {
       email,
       password,
       invitationToken,
-      tenantId: tenantSubdomain.isSubdomain
-        ? AuthCurrentTenant.get()
-        : undefined,
+      tenantId: AuthCurrentTenant.get(),
     });
 
     AuthInvitationToken.clear();
@@ -70,9 +54,9 @@ export default class AuthService {
   }
 
   static async fetchMe() {
-    const response = await authAxios.get('/auth/me');
+    const response = await authAxios.get("/auth/me");
     return response.data;
-  }  
+  }
 
   static signout() {
     AuthToken.set(null, true);
@@ -83,10 +67,7 @@ export default class AuthService {
       data,
     };
 
-    const response = await authAxios.put(
-      '/auth/profile',
-      body,
-    );
+    const response = await authAxios.put("/auth/profile", body);
 
     return response.data;
   }
@@ -97,39 +78,26 @@ export default class AuthService {
       newPassword,
     };
 
-    const response = await authAxios.put(
-      '/auth/change-password',
-      body,
-    );
+    const response = await authAxios.put("/auth/change-password", body);
 
     return response.data;
   }
 
   static async passwordReset(token, password) {
-    const response = await authAxios.put(
-      '/auth/password-reset',
-      {
-        token,
-        password,
-        tenantId: tenantSubdomain.isSubdomain
-          ? AuthCurrentTenant.get()
-          : undefined,
-      },
-    );
+    const response = await authAxios.put("/auth/password-reset", {
+      token,
+      password,
+      tenantId: AuthCurrentTenant.get(),
+    });
 
     return response.data;
   }
 
   static async verifyEmail(token) {
-    const response = await authAxios.put(
-      '/auth/verify-email',
-      {
-        token,
-        tenantId: tenantSubdomain.isSubdomain
-          ? AuthCurrentTenant.get()
-          : undefined,
-      },
-    );
+    const response = await authAxios.put("/auth/verify-email", {
+      token,
+      tenantId: AuthCurrentTenant.get(),
+    });
 
     return response.data;
   }
@@ -137,15 +105,10 @@ export default class AuthService {
   static async socialOnboard() {
     const invitationToken = AuthInvitationToken.get();
 
-    const response = await authAxios.post(
-      '/auth/social/onboard',
-      {
-        invitationToken,
-        tenantId: tenantSubdomain.isSubdomain
-          ? AuthCurrentTenant.get()
-          : undefined,
-      },
-    );
+    const response = await authAxios.post("/auth/social/onboard", {
+      invitationToken,
+      tenantId: AuthCurrentTenant.get(),
+    });
 
     AuthInvitationToken.clear();
 
@@ -153,10 +116,8 @@ export default class AuthService {
   }
 
   static isSocialOnboardRequested() {
-    const urlParams = new URLSearchParams(
-      window.location.search,
-    );
+    const urlParams = new URLSearchParams(window.location.search);
 
-    return Boolean(urlParams.get('social'));
+    return Boolean(urlParams.get("social"));
   }
 }

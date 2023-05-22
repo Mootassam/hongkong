@@ -1,4 +1,3 @@
-import { tenantSubdomain } from '../tenant/tenantSubdomain';
 
 export default class AuthCurrentTenant {
   static selectAndSaveOnStorageFor(currentUser) {
@@ -30,15 +29,7 @@ export default class AuthCurrentTenant {
 
     tenant = tenant || activeTenants[0].tenant;
 
-    if (
-      tenant &&
-      tenantSubdomain.isEnabled &&
-      !tenantSubdomain.isSubdomainOf(tenant.url)
-    ) {
-      return tenantSubdomain.redirectAuthenticatedTo(
-        tenant.url,
-      );
-    }
+   
 
     this.set(tenant);
     return tenant;
@@ -80,7 +71,6 @@ export default class AuthCurrentTenant {
     if (!tenant) {
       return this.clear();
     }
-
     localStorage.setItem('tenant', JSON.stringify(tenant));
   }
 

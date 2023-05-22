@@ -6,7 +6,6 @@ import { getHistory } from '../../modules/store';
 import { AuthToken } from '../../modules/auth/authToken';
 import AuthCurrentTenant from '../../modules/auth/authCurrentTenant';
 import selectors from '../../modules/auth/authSelectors';
-import { tenantSubdomain } from '../tenant/tenantSubdomain';
 import SettingsService from '../settings/settingsService';
 
 const prefix = 'AUTH';
@@ -49,7 +48,7 @@ const authActions = {
   EMAIL_CONFIRMATION_SUCCESS: `${prefix}_EMAIL_CONFIRMATION_SUCCESS`,
   EMAIL_CONFIRMATION_ERROR: `${prefix}_EMAIL_CONFIRMATION_ERROR`,
 
-  doClearErrorMessage() {
+  doClearErrorMessage() { 
     return {
       type: authActions.ERROR_MESSAGE_CLEARED,
     };
@@ -353,11 +352,7 @@ const authActions = {
     },
 
   doSelectTenant: (tenant) => async (dispatch) => {
-    if (tenantSubdomain.isEnabled) {
-      tenantSubdomain.redirectAuthenticatedTo(tenant.url);
-      return;
-    }
-
+ 
     AuthCurrentTenant.set(tenant);
     await dispatch(authActions.doRefreshCurrentUser());
     SettingsService.applyThemeFromTenant();

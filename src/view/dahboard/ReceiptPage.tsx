@@ -18,10 +18,10 @@ import Chan from '../../component/chanBank/Chan';
 import Fly2 from '../../component/Fly2/Fly2';
 import Fly3 from '../../component/Fly3/Fly3';
 import Blue from '../../component/Blue/Blue';
-import { SiGreenhouse } from 'react-icons/si';
+
 import Green from '../../component/green/Green';
 
-function Home() {
+function ReceiptPage() {
 
     const divRef = useRef<HTMLDivElement>(null);
     const handleCaptureScreenshot = () => {
@@ -72,4 +72,4 @@ function Home() {
   )
 }
 
-export default Home
+export default ReceiptPage
