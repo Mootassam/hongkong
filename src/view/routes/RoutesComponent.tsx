@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { Route, Switch } from "react-router-dom";
-import PrivateRoute from "./PrivateRoute";
-import routes from "../routes";
-import CustomLoadable from "../../view/shared/CustomLoadable";
+import PrivateRoute from "@view/routes/PrivateRoute";
+import routes from "@view/routes";
+import CustomLoadable from "@view/shared/CustomLoadable";
 import { useSelector } from "react-redux";
-import authSelectors from "../../modules/auth/authSelectors";
-import ProgressBar from "../shared/ProgressBar";
+import authSelectors from "@modules/auth/authSelectors";
+import ProgressBar from "@view/shared/ProgressBar";
 import PublicRoute from "./PublicRoute";
 
 function RoutesComponent() {
@@ -30,6 +30,7 @@ function RoutesComponent() {
   }, [loading]);
 
   if (loading) {
+    
     return <div />;
   }
 
@@ -63,6 +64,8 @@ function RoutesComponent() {
       ))}
 
       {routes.simpleRoutes.map((route) => (
+      
+        
         <Route
           key={route.path}
           exact

@@ -1,4 +1,4 @@
-import importerReducers from 'src/modules/shared/importer/importerReducers';
-import actions from 'src/modules/paymentsettings/importer/paymentsettingsImporterActions';
+import importerReducers from '@modules/shared/importer/importerReducers';
+import actions from '@modules/paymentsettings/importer/paymentsettingsImporterActions';
 
 export default importerReducers(actions);

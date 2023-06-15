@@ -1,10 +1,10 @@
-import authActions from '../../../modules/auth/authActions';
-import TenantService from '../../../modules/tenant/tenantService';
-import Errors from '../../../modules/shared/error/errors';
+import authActions from '@modules/auth/authActions';
+import TenantService from '@modules/tenant/tenantService';
+import Errors from '@modules/shared/error/errors';
 import { i18n } from '../../../i18n';
-import { getHistory } from '../../../modules/store';
-import Message from '../../../view/shared/message';
-import listActions from '../../../modules/tenant/list/tenantListActions';
+import { getHistory } from '@modules/store';
+import Message from '@view/shared/message';
+import listActions from '@modules/tenant/list/tenantListActions';
 
 const prefix = 'TENANT_DESTROY';
 

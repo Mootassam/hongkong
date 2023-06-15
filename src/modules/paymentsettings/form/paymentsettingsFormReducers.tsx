@@ -1,4 +1,4 @@
-import actions from 'src/modules/paymentsettings/form/paymentsettingsFormActions';
+import actions from '@modules/paymentsettings/form/paymentsettingsFormActions';
 
 const initialData = {
   initLoading: false,

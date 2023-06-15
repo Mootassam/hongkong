@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Styles/styles.css";
 import { useDispatch, useSelector } from "react-redux";
-import actions from "../../modules/auth/authActions";
+import actions from "@modules/auth/authActions";
 import { FormProvider, useForm } from "react-hook-form";
 import * as yup from "yup";
-import yupFormSchemas from "../../modules/shared/yup/yupFormSchemas";
+import yupFormSchemas from "@modules/shared/yup/yupFormSchemas";
 import { i18n } from "../../i18n";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useFormContext } from 'react-hook-form';

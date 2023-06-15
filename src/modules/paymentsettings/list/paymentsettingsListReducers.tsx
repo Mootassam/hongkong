@@ -1,4 +1,4 @@
-import actions from 'src/modules/paymentsettings/list/paymentsettingsListActions';
+import actions from '@modules/paymentsettings/list/paymentsettingsListActions';
 
 const INITIAL_PAGE_SIZE = 10;
 

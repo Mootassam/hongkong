@@ -1,7 +1,6 @@
 import React from "react";
 import { Redirect, Route, useLocation } from "react-router-dom";
-import Home from "../dahboard/ReceiptPage";
-import PermissionChecker from "../../modules/auth/permissionChecker";
+import PermissionChecker from "@modules/auth/permissionChecker";
 
 function PrivateRoute({ component: Component, currentTenant, currentUser, ...rest }) {
   const location = useLocation();
@@ -10,12 +9,17 @@ function PrivateRoute({ component: Component, currentTenant, currentUser, ...res
   if (!permissionChecker.isAuthenticated) {
     return (
       <Redirect
+      
         to={{
           pathname: '/auth/signin',
           state: { from: location },
         }}
       />
+      
     );
+   
+
+  
   }
 
   return <Route component={Component} {...rest} />;

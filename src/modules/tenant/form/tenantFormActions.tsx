@@ -1,9 +1,9 @@
-import TenantService from '../../../modules/tenant/tenantService';
-import Errors from '../../../modules/shared/error/errors';
-import Message from '../../../view/shared/message';
-import { getHistory } from '../../../modules/store';
+import TenantService from '@modules/tenant/tenantService';
+import Errors from '@modules/shared/error/errors';
+import Message from '@view/shared/message';
+import { getHistory } from '@modules/store';
 import { i18n } from '../../../i18n';
-import authActions from '../../../modules/auth/authActions';
+import authActions from '@modules/auth/authActions';
 
 const prefix = 'TENANT_FORM';
 

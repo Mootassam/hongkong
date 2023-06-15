@@ -1,8 +1,7 @@
-import authAxios from "../../modules/shared/axios/authAxios";
-import { AuthToken } from "../../modules/auth/authToken";
-import AuthCurrentTenant from "../../modules/auth/authCurrentTenant";
-import AuthInvitationToken from "../../modules/auth/authInvitationToken";
-import { tenantSubdomain } from "../tenant/tenantSubdomain";
+import authAxios from "@modules/shared/axios/authAxios";
+import { AuthToken } from "@modules/auth/authToken";
+import AuthCurrentTenant from "@modules/auth/authCurrentTenant";
+import AuthInvitationToken from "@modules/auth/authInvitationToken";
 
 export default class AuthService {
   static async sendEmailVerification() {

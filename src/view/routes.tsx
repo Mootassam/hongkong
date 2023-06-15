@@ -1,9 +1,7 @@
-
-
 const privateRoutes = [
   {
     path: "/",
-    loader: () => import("./dahboard/ReceiptPage"),
+    loader: () => import("@view/dahboard/ReceiptPage"),
     permissionRequired: null,
     exact: true,
   },
@@ -11,27 +9,26 @@ const privateRoutes = [
 const publicRoutes = [
   {
     path: "/auth/signin",
-    loader: () => import("../view/Auth/SigninPage"),
+    loader: () => import("@view/Auth/SigninPage"),
   },
   {
     path: "/auth/signup",
-    loader: () => import("../view/Auth/SignupPage"),
+    loader: () => import("@view/Auth/SignupPage"),
   },
-
 ];
 
 const simpleRoutes = [
   {
     path: "/403",
-    loader: () => import("../view/shared/errors/Error403Page"),
+    loader: () => import("@view/shared/errors/Error403Page"),
   },
   {
     path: "/500",
-    loader: () => import("../view/shared/errors/Error500Page"),
+    loader: () => import("@view/shared/errors/Error500Page"),
   },
   {
     path: "**",
-    loader: () => import("../view/shared/errors/Error404Page"),
+    loader: () => import("@view/shared/errors/Error404Page"),
   },
 ].filter(Boolean);
 export default {

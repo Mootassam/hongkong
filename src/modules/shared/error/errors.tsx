@@ -1,7 +1,7 @@
-import Message from '../../../view/shared/message';
-import { getHistory } from '../../../modules/store';
+import Message from '@view/shared/message';
+import { getHistory } from '@modules/store';
 import { i18n, i18nExists } from '../../../i18n';
-import authService from '../../../modules/auth/authService';
+import authService from '@modules/auth/authService';
 
 const DEFAULT_ERROR_MESSAGE = i18n(
   'errors.defaultErrorMessage',

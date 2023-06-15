@@ -1,4 +1,4 @@
-import actions from 'src/modules/paymentsettings/destroy/paymentsettingsDestroyActions';
+import actions from '@modules/paymentsettings/destroy/paymentsettingsDestroyActions';
 
 const initialData = {
   loading: false,

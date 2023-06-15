@@ -1,7 +1,7 @@
-import importerActions from 'src/modules/shared/importer/importerActions';
-import selectors from 'src/modules/paymentsettings/importer/paymentsettingsImporterSelectors';
-import PaymentsettingsService from 'src/modules/paymentsettings/paymentsettingsService';
-import fields from 'src/modules/paymentsettings/importer/paymentsettingsImporterFields';
+import importerActions from '@modules/shared/importer/importerActions';
+import selectors from '@modules/paymentsettings/importer/paymentsettingsImporterSelectors';
+import PaymentsettingsService from '@modules/paymentsettings/paymentsettingsService';
+import fields from '@modules/paymentsettings/importer/paymentsettingsImporterFields';
 import { i18n } from 'src/i18n';
 
 const paymentsettingsImporterActions = importerActions(

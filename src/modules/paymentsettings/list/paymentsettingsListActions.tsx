@@ -1,9 +1,9 @@
-import PaymentsettingsService from 'src/modules/paymentsettings/paymentsettingsService';
-import selectors from 'src/modules/paymentsettings/list/paymentsettingsListSelectors';
+import PaymentsettingsService from '@modules/paymentsettings/paymentsettingsService';
+import selectors from '@modules/paymentsettings/list/paymentsettingsListSelectors';
 import { i18n } from 'src/i18n';
-import exporterFields from 'src/modules/paymentsettings/list/paymentsettingsListExporterFields';
-import Errors from 'src/modules/shared/error/errors';
-import Exporter from 'src/modules/shared/exporter/exporter';
+import exporterFields from '@modules/paymentsettings/list/paymentsettingsListExporterFields';
+import Errors from '@modules/shared/error/errors';
+import Exporter from '@modules/shared/exporter/exporter';
 
 const prefix = 'PAYMENTSETTINGS_LIST';
 

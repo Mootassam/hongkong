@@ -1,12 +1,12 @@
-import TenantService from '../../../modules/tenant/tenantService';
-import Errors from '../../../modules/shared/error/errors';
-import Message from '../../../view/shared/message';
-import { getHistory } from '../../../modules/store';
+import TenantService from '@modules/tenant/tenantService';
+import Errors from '@modules/shared/error/errors';
+import Message from '@view/shared/message';
+import { getHistory } from '@modules/store';
 import { i18n } from '../../../i18n';
-import authActions from '../../../modules/auth/authActions';
-import authSelectors from '../../../modules/auth/authSelectors';
-import selectors from '../../../modules/tenant/invitation/tenantInvitationSelectors';
-import AuthInvitationToken from '../../../modules/auth/authInvitationToken';
+import authActions from '@modules/auth/authActions';
+import authSelectors from '@modules/auth/authSelectors';
+import selectors from '@modules/tenant/invitation/tenantInvitationSelectors';
+import AuthInvitationToken from '@modules/auth/authInvitationToken';
 
 const prefix = 'TENANT_INVITATION';
 

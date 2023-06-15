@@ -1,11 +1,11 @@
-import service from '../../modules/auth/authService';
-import Errors from '../../modules/shared/error/errors';
-import Message from '../../view/shared/message';
+import service from '@modules/auth/authService';
+import Errors from '@modules/shared/error/errors';
+import Message from '@view/shared/message';
 import { i18n } from '../../i18n';
-import { getHistory } from '../../modules/store';
-import { AuthToken } from '../../modules/auth/authToken';
-import AuthCurrentTenant from '../../modules/auth/authCurrentTenant';
-import selectors from '../../modules/auth/authSelectors';
+import { getHistory } from '@modules/store';
+import { AuthToken } from '@modules/auth/authToken';
+import AuthCurrentTenant from '@modules/auth/authCurrentTenant';
+import selectors from '@modules/auth/authSelectors';
 import SettingsService from '../settings/settingsService';
 
 const prefix = 'AUTH';

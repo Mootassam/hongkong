@@ -1,6 +1,6 @@
-import PaymentsettingsService from 'src/modules/paymentsettings/paymentsettingsService';
-import Errors from 'src/modules/shared/error/errors';
-import { getHistory } from 'src/modules/store';
+import PaymentsettingsService from '@modules/paymentsettings/paymentsettingsService';
+import Errors from '@modules/shared/error/errors';
+import { getHistory } from '@modules/store';
 
 const prefix = 'PAYMENTSETTINGS_VIEW';
 

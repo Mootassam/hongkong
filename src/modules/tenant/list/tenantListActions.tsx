@@ -1,6 +1,6 @@
-import TenantService from '../../../modules/tenant/tenantService';
-import selectors from '../../../modules/tenant/list/tenantListSelectors';
-import Errors from '../../../modules/shared/error/errors';
+import TenantService from '@modules/tenant/tenantService';
+import selectors from '@modules/tenant/list/tenantListSelectors';
+import Errors from '@modules/shared/error/errors';
 
 const prefix = 'TENANT_LIST';
 

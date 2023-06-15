@@ -1,6 +1,6 @@
-//import userEnumerators from 'src/modules/user/userEnumerators';
+//import userEnumerators from '@modules/user/userEnumerators';
 //import Roles from 'src/security/roles';
-import service from 'src/modules/user/userService'
+import service from '@modules/user/userService'
 
 
 const userParrain={

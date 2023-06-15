@@ -1,4 +1,4 @@
-import actions from '../../modules/layout/layoutActions';
+import actions from '@modules/layout/layoutActions';
 import { getLanguageCode } from '../../i18n';
 
 const initialData = {

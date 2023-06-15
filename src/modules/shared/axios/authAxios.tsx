@@ -1,4 +1,4 @@
-import { AuthToken } from '../../../modules/auth/authToken';
+import { AuthToken } from '@modules/auth/authToken';
 import Axios from 'axios';
 import { getLanguageCode } from '../../../i18n';
 import Qs from 'qs';

@@ -1,11 +1,10 @@
 import { useRef, useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import RoutesComponent from "./view/routes/RoutesComponent";
+import RoutesComponent from "@view/routes/RoutesComponent";
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 
-import { configureStore, getHistory } from "./modules/store";
+import { configureStore, getHistory } from "@modules/store";
 const store = configureStore();
 
 function App() {

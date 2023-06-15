@@ -1,8 +1,8 @@
 import filesize from 'filesize';
-import { i18n } from 'src/i18n';
-import authAxios from 'src/modules/shared/axios/authAxios';
+import { i18n } from '../../../i18n';
+import authAxios from '@modules/shared/axios/authAxios';
 import { v4 as uuid } from 'uuid';
-import AuthCurrentTenant from 'src/modules/auth/authCurrentTenant';
+import AuthCurrentTenant from 'modules/auth/authCurrentTenant';
 import axios from 'axios';
 
 export default class FileUploader {
