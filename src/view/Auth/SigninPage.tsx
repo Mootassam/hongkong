@@ -8,6 +8,8 @@ import yupFormSchemas from "@modules/shared/yup/yupFormSchemas";
 import { i18n } from "../../i18n";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useFormContext } from 'react-hook-form';
+import InputFormItem from "@view/shared/form/InputFormItem";
+import selectors from '@modules/auth/authSelectors';
 
 const schema = yup.object().shape({
   email: yupFormSchemas.string(i18n("user.fields.email"), {
@@ -20,12 +22,11 @@ const schema = yup.object().shape({
 });
 function SigninPage() {
   const dispatch = useDispatch();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
 
   const [initialValues] = useState({
-    email: "mootassame@gmail.com",
-    password: "123456789",
+    email: "",
+    password: "",
     rememberMe: true,
   });
 
@@ -35,12 +36,14 @@ function SigninPage() {
 
 
   const form = useForm({
-   
+    resolver: yupResolver(schema),
     mode: "onSubmit",
     defaultValues: initialValues,
   });
 
-
+  const externalErrorMessage = useSelector(
+    selectors.selectErrorMessage,
+  );
 
   const onSubmit = ({ email, password, rememberMe }) => {
     dispatch(actions.doSigninWithEmailAndPassword(email, password, rememberMe));
@@ -58,18 +61,19 @@ function SigninPage() {
             <div className="singin__form">
               <div className="singin__group">
                 <label htmlFor="">E-mail or phone number</label>
-                <input
+                <InputFormItem
                   type="text"
                   name="email"
                   placeholder="Enter your Email"
                   className="singin__input"
+                  externalErrorMessage={externalErrorMessage}
            
                 />
               </div>
 
               <div className="singin__group">
                 <label htmlFor="">Password</label>
-                <input
+                <InputFormItem
                   type="text"
                   name="password"
                   placeholder="Enter your passowrd"
