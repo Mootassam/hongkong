@@ -2,11 +2,10 @@ import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../../data/OptionBank";
 function Sidebar(props: any) {
-  useEffect(() => {}, [props.value]);
+  useEffect(() => {
+    let data;
+  }, [props.value]);
 
-  if (props.size !== undefined) {
-    console.log(props.value);
-  }
 
   return (
     <div className="app__sidebar">
@@ -18,8 +17,8 @@ function Sidebar(props: any) {
             className="app__select"
             onChange={(e) => props.setvalue(e.target.value)}
           >
-            {optionBank.map((item) => (
-              <option value={item.value}>{item.name} </option>
+            {optionBank.map((item, index) => (
+              <option  key={index} value={item.value}>{item.name} </option>
             ))}
           </select>
         </div>

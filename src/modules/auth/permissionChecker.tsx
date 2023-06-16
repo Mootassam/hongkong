@@ -1,4 +1,4 @@
-import Plans from '../../security/plans';
+import Plans from '@security/plans';
 
 const plans = Plans.values;
 
@@ -138,6 +138,10 @@ export default class PermissionChecker {
     const tenant = this.currentUser.tenants.find(
       (tenant) => tenant.status === 'active',
     );
+
+    console.log('====================================');
+    console.log(tenant);
+    console.log('====================================');
 
     if (!tenant) {
       return true;

@@ -6,6 +6,8 @@ const privateRoutes = [
     exact: true,
   },
 ].filter(Boolean);
+
+
 const publicRoutes = [
   {
     path: "/auth/signin",
@@ -31,8 +33,19 @@ const simpleRoutes = [
     loader: () => import("@view/shared/errors/Error404Page"),
   },
 ].filter(Boolean);
+
+const emptyPermissionsRoutes = [
+  {
+    path: '/auth/empty-permissions',
+    loader: () =>
+      import('@view/Auth/EmptyPermissionsPage'),
+  },
+].filter(Boolean);
+
+
 export default {
-  privateRoutes,
   publicRoutes,
+  emptyPermissionsRoutes,
+  privateRoutes,
   simpleRoutes,
 };

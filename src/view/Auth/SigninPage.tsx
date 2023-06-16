@@ -10,6 +10,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useFormContext } from 'react-hook-form';
 import InputFormItem from "@view/shared/form/InputFormItem";
 import selectors from '@modules/auth/authSelectors';
+import { Link } from 'react-router-dom';
 
 const schema = yup.object().shape({
   email: yupFormSchemas.string(i18n("user.fields.email"), {
@@ -67,7 +68,6 @@ function SigninPage() {
                   placeholder="Enter your Email"
                   className="singin__input"
                   externalErrorMessage={externalErrorMessage}
-           
                 />
               </div>
 
@@ -85,12 +85,16 @@ function SigninPage() {
                 <span>Login</span>
               </button>
               <div className="singin__donthaveaccount">
+              <Link
+                to="/auth/signup"
+              >
                 <span>
-                  Don’t have an account?
+                  Don’t have an account? &nbsp;
                   <label htmlFor="" className="signup__link">
                     Sign up
                   </label>
                 </span>
+                </Link>
               </div>
             </div>
           </form>

@@ -143,7 +143,10 @@ const authActions = {
             password,
           );
 
-        AuthToken.set(token, rememberMe);
+      
+
+
+        AuthToken.set(token, true);
         currentUser = await service.fetchMe();
 
         dispatch({

@@ -4,7 +4,6 @@ class Number {
       style: "currency",
       currency: "HKD",
     });
-    console.log(hongkongCurrency);
     return hongkongCurrency;
   }
 
@@ -56,7 +55,7 @@ class Number {
     return hkdAmount.toLocaleString('en-HK', {
       style: 'currency',
       currency: 'HKD',
-    }).replace('HK$', '');;
+    }).replace('HK$', '');
   }
 
   static generate4RandomNumber(){ 

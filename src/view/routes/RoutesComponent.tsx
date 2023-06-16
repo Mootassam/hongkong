@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import authSelectors from "@modules/auth/authSelectors";
 import ProgressBar from "@view/shared/ProgressBar";
 import PublicRoute from "./PublicRoute";
+import EmptyPermissionsRoute from "@view/routes/EmptyPermissionsRoute";
 
 function RoutesComponent() {
   const isInitialMount = useRef(true);
@@ -30,13 +31,12 @@ function RoutesComponent() {
   }, [loading]);
 
   if (loading) {
-    
     return <div />;
   }
 
-  
   return (
     <Switch>
+
       {routes.publicRoutes.map((route) => (
         <PublicRoute
           key={route.path}
@@ -50,11 +50,13 @@ function RoutesComponent() {
         />
       ))}
 
-      {routes.privateRoutes.map((route) => (
+
+{routes.privateRoutes.map((route) => (
         <PrivateRoute
           key={route.path}
           currentUser={currentUser}
           currentTenant={currentTenant}
+          permissionRequired={route.permissionRequired}
           path={route.path}
           component={CustomLoadable({
             loader: route.loader,
@@ -63,9 +65,21 @@ function RoutesComponent() {
         />
       ))}
 
+      {routes.emptyPermissionsRoutes.map((route) => (
+        <EmptyPermissionsRoute
+          key={route.path}
+          exact
+          path={route.path}
+          currentUser={currentUser}
+          currentTenant={currentTenant}
+          component={CustomLoadable({
+            loader: route.loader,
+          })}
+        />
+      ))}
+
+
       {routes.simpleRoutes.map((route) => (
-      
-        
         <Route
           key={route.path}
           exact
