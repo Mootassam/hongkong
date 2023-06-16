@@ -187,6 +187,13 @@ border: 0;
   flex-grow: 1;
 }
 
+.__danger:focus{ 
+  outline-color: #ff5454;
+  box-shadow: none; /* Remove any box shadow */
+
+
+}
+
 .singin__donthaveaccount { 
     display: flex;
     align-items: center;

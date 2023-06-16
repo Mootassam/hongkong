@@ -49,7 +49,10 @@ export function InputFormItem(props) {
         )}
         {description}
         <input
-         className={"singin__input"}
+
+         className={`singin__input ${
+          errorMessage ? '__danger' : ''
+        }`}
           id={name}
           name={name}
           type={type}
