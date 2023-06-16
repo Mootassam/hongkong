@@ -7,10 +7,10 @@ import * as yup from "yup";
 import yupFormSchemas from "@modules/shared/yup/yupFormSchemas";
 import { i18n } from "../../i18n";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useFormContext } from 'react-hook-form';
+import { useFormContext } from "react-hook-form";
 import InputFormItem from "@view/shared/form/InputFormItem";
-import selectors from '@modules/auth/authSelectors';
-import { Link } from 'react-router-dom';
+import selectors from "@modules/auth/authSelectors";
+import { Link } from "react-router-dom";
 import ButtonIcon from "@view/shared/ButtonIcon";
 
 const schema = yup.object().shape({
@@ -27,8 +27,6 @@ function SigninPage() {
 
   const loading = useSelector(selectors.selectLoading);
 
-
-
   const [initialValues] = useState({
     email: "",
     password: "",
@@ -39,16 +37,13 @@ function SigninPage() {
     dispatch(actions.doClearErrorMessage());
   }, [dispatch]);
 
-
   const form = useForm({
     resolver: yupResolver(schema),
     mode: "onSubmit",
     defaultValues: initialValues,
   });
 
-  const externalErrorMessage = useSelector(
-    selectors.selectErrorMessage,
-  );
+  const externalErrorMessage = useSelector(selectors.selectErrorMessage);
 
   const onSubmit = ({ email, password, rememberMe }) => {
     dispatch(actions.doSigninWithEmailAndPassword(email, password, rememberMe));
@@ -85,42 +80,39 @@ function SigninPage() {
                 />
               </div>
 
-              <button type="submit" disabled={loading} className="singin__button">
-
-
-              <ButtonIcon loading={loading}  />
+              <button
+                type="submit"
+                disabled={loading}
+                className="singin__button"
+              >
+                <ButtonIcon loading={loading} />
 
                 <span>Login</span>
               </button>
               <div className="singin__donthaveaccount">
-              <Link
-                to="/auth/signup"
-                className="link-without-underline"
-              >
-                <span>
-                  Don’t have an account? &nbsp;
-                  <label htmlFor="" className="signup__link">
-                    Sign up
-                  </label>
-                </span>
+                <Link to="/auth/signup" className="link-without-underline">
+                  <span>
+                    Don’t have an account? &nbsp;
+                    <label htmlFor="" className="signup__link">
+                      Sign up
+                    </label>
+                  </span>
                 </Link>
               </div>
             </div>
           </form>
         </FormProvider>
-
         <div className="bottom__signin">
-
-
-<div style={{cursor:"pointer"}}> <img src="/public/flags/america.png" alt=""   /> </div>
-<div style={{cursor:"pointer"}} >  <img src="/public/flags/china.png" width={24}  alt=""  /> </div>
-
-
-
+          <div style={{ cursor: "pointer" }}>
+            {" "}
+            <img src="/public/flags/america.png" alt="" />{" "}
+          </div>
+          <div style={{ cursor: "pointer" }}>
+            {" "}
+            <img src="/public/flags/china.png" width={24} alt="" />{" "}
+          </div>
+        </div>
       </div>
-      </div>
-
-  
     </div>
   );
 }

@@ -51,6 +51,7 @@ export async function init() {
 async function initFr() {
   const language = languages['fr'];
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const momentLocale = (await import('moment/locale/fr'))
     .default;

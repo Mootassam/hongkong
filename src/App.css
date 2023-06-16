@@ -32,3 +32,8 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.invalid-feedback{ 
+  padding-top: 4px;
+  color: #ff5454;
+}
