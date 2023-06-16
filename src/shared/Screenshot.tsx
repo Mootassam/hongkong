@@ -4,7 +4,7 @@ class Screenshot {
   static handleCaptureScreenshot(divRef: any) {
     if (divRef.current) {
       html2canvas(divRef.current, {
-        scale: 3,
+        scale: 2,
         useCORS: true,
         allowTaint: true,
       }).then((canvas) => {
@@ -14,7 +14,7 @@ class Screenshot {
             navigator.clipboard
               .write([item])
               .then(() => {
-                console.log("Screenshot copied to clipboard");
+                // console.log("Screenshot copied to clipboard");
               })
               .catch((error) => {
                 console.error("Error copying screenshot to clipboard:", error);

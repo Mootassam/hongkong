@@ -1,10 +1,22 @@
 import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../../data/OptionBank";
-function Sidebar(props: any) {
+import { FaEraser, FaUndo } from "react-icons/fa";
+function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
+  , undo,
+  erase,
+  color,
+  changeColor,
+  brushSize,
+  changeBrushSize,
+  clear
+
+
+}) {
   useEffect(() => {
     let data;
-  }, [props.value]);
+  }, [value]);
+
 
 
   return (
@@ -15,20 +27,20 @@ function Sidebar(props: any) {
           <select
             name="bank"
             className="app__select"
-            onChange={(e) => props.setvalue(e.target.value)}
+            onChange={(e) => setvalue(e.target.value)}
           >
-            {optionBank.map((item, index) => (
-              <option  key={index} value={item.value}>{item.name} </option>
+            {optionBank.map((item) => (
+              <option value={item.value}>{item.name} </option>
             ))}
           </select>
         </div>
-        {props.value === "800" && (
+        {value === "800" && (
           <div className="form__group">
             <label htmlFor=""> Select Size</label>
             <select
               name="bank"
               className="app__select"
-              onChange={(e) => props.setSize(e.target.value)}
+              onChange={(e) => setSize(e.target.value)}
             >
               <option value="small">Small</option>
               <option value="large">Large</option>
@@ -39,12 +51,37 @@ function Sidebar(props: any) {
           <label htmlFor=""> Write the Amount</label>
           <input
             type="text"
-            onChange={(e) => props.setAmount(e.target.value)}
+            onChange={(e) => setAmount(e.target.value)}
             maxLength={7}
           />
         </div>
+        <div className="form__group">
+          <label htmlFor="">Tools</label>
+          <div className="app__tools">
+            <input type="color" value={color} onChange={changeColor} className="btn--color" />
+            <button className="undo" onClick={undo}>
+              <FaUndo />
+            </button>
+            <button onClick={erase} className="erase__button">
+              <FaEraser />
+            </button>
+          </div>
+        </div>
+        <div className="form__group">
+          <label htmlFor="">Brush Size</label>
+          <input
+            type="range"
+            min="1"
+            max="70"
+            value={brushSize}
+            onChange={changeBrushSize}
+          />
+          <button onClick={clear} className="clear__button">Clear</button>
+        </div>
       </div>
-      <div className="app__screenshot" onClick={() => props.screenshot()}></div>
+      <div className="app__screenshot" onClick={() => screenshot()}>
+        <img src="/sidebar/screenshot.png" alt="" width={80} />
+      </div>
     </div>
   );
 }

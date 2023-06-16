@@ -49,7 +49,6 @@ export function InputFormItem(props) {
         )}
         {description}
         <input
-
          className={`singin__input ${
           errorMessage ? '__danger' : ''
         }`}
