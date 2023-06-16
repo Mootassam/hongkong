@@ -10,10 +10,13 @@ function EmptyPermissionsPage() {
     dispatch(actions.doSignout());
   };
   return (
-    <div>
-      EmptyPermissionsPage
-      <button type="button" onClick={doSignout}>
-        {" "}
+    <div className="app__empty">
+      <div className="no__permission">
+
+        You have no permissions yet. Wait for the admin to grant you privileges.
+      </div>
+
+      <button type="button" onClick={doSignout} className="signout">
         Signout
       </button>
     </div>
