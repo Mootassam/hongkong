@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import actions from "@modules/auth/authActions";
 import selectors from '@modules/auth/authSelectors';
 import InputFormItem from "@view/shared/form/InputFormItem";
+import ButtonIcon from "@view/shared/ButtonIcon";
 
 
 const schema = yup.object().shape({
@@ -50,19 +51,22 @@ function SignupPage() {
   const onSubmit = ({ email, password }) => {
     dispatch(actions.doRegisterEmailAndPassword(email, password));
   };
+
+  const loading = useSelector(selectors.selectLoading);
+
   return (
     <div className="app__singnin">
       <div className="singin__page">
         <div className="singin__header">
-          <h1>Signup</h1>
-          <span>Let’s build something greate</span>
+          <h1>SignUp</h1>
+          <span>Enter your email and password to signup</span>
         </div>
 
         <FormProvider {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className="singin__form">
               <div className="singin__group">
-                <label htmlFor="">E-mail or phone number</label>
+                <label htmlFor="">E-mail </label>
                 <InputFormItem
                   type="text"
                   name="email"
@@ -82,12 +86,18 @@ function SignupPage() {
                 />
               </div>
 
-              <button type="submit" className="singin__button">
+      
+              <button type="submit" disabled={loading} className="singin__button">
+
+
+              <ButtonIcon loading={loading}  />
+
                 <span>Signup</span>
               </button>
               <div className="singin__donthaveaccount">
               <Link
                 to="/auth/signin"
+                className="link-without-underline"
               >
                 <span>
                   Don’t have an account? &nbsp;

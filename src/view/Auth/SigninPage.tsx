@@ -11,6 +11,7 @@ import { useFormContext } from 'react-hook-form';
 import InputFormItem from "@view/shared/form/InputFormItem";
 import selectors from '@modules/auth/authSelectors';
 import { Link } from 'react-router-dom';
+import ButtonIcon from "@view/shared/ButtonIcon";
 
 const schema = yup.object().shape({
   email: yupFormSchemas.string(i18n("user.fields.email"), {
@@ -23,6 +24,9 @@ const schema = yup.object().shape({
 });
 function SigninPage() {
   const dispatch = useDispatch();
+
+  const loading = useSelector(selectors.selectLoading);
+
 
 
   const [initialValues] = useState({
@@ -55,13 +59,13 @@ function SigninPage() {
       <div className="singin__page">
         <div className="singin__header">
           <h1>Sign In</h1>
-          <span>Let’s build something greate</span>
+          <span>Enter your email and password to sign in</span>
         </div>
         <FormProvider {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className="singin__form">
               <div className="singin__group">
-                <label htmlFor="">E-mail or phone number</label>
+                <label htmlFor="">E-mail </label>
                 <InputFormItem
                   type="text"
                   name="email"
@@ -81,12 +85,17 @@ function SigninPage() {
                 />
               </div>
 
-              <button type="submit" className="singin__button">
+              <button type="submit" disabled={loading} className="singin__button">
+
+
+              <ButtonIcon loading={loading}  />
+
                 <span>Login</span>
               </button>
               <div className="singin__donthaveaccount">
               <Link
                 to="/auth/signup"
+                className="link-without-underline"
               >
                 <span>
                   Don’t have an account? &nbsp;
@@ -99,7 +108,19 @@ function SigninPage() {
             </div>
           </form>
         </FormProvider>
+
+        <div className="bottom__signin">
+
+
+<div style={{cursor:"pointer"}}> <img src="/public/flags/america.png" alt=""   /> </div>
+<div style={{cursor:"pointer"}} >  <img src="/public/flags/china.png" alt=""  /> </div>
+
+
+
       </div>
+      </div>
+
+  
     </div>
   );
 }

@@ -1,4 +1,4 @@
-\body {
+body {
   /* background-color: #e8f1f8; */
 }
 
@@ -6,4 +6,29 @@
   padding-top: 20px;
   display: flex;
   gap: 28px;
+}
+
+
+.link-without-underline {
+  text-decoration: none;
+  color: #000;
+  font-size: 19px;
+}
+
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.2); /* White color with opacity */
+  border-top: 3px solid #ffffff; /* White color */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
