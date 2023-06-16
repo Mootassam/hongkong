@@ -113,7 +113,7 @@ function SigninPage() {
 
 
 <div style={{cursor:"pointer"}}> <img src="/public/flags/america.png" alt=""   /> </div>
-<div style={{cursor:"pointer"}} >  <img src="/public/flags/china.png" alt=""  /> </div>
+<div style={{cursor:"pointer"}} >  <img src="/public/flags/china.png" width={24}  alt=""  /> </div>
 
 
 
