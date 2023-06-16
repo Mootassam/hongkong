@@ -103,6 +103,15 @@ function SignupPage() {
             </div>
           </form>
         </FormProvider>
+        <div className="bottom__signin">
+
+
+<div style={{cursor:"pointer"}}> <img src="/public/flags/america.png" alt=""   /> </div>
+<div style={{cursor:"pointer"}} >  <img src="/public/flags/china.png" width={24}  alt=""  /> </div>
+
+
+
+      </div>
       </div>
     </div>
   );
