@@ -92,9 +92,10 @@ function SigninPage() {
               <div className="singin__donthaveaccount">
                 <Link to="/auth/signup" className="link-without-underline">
                   <span>
+
                     Don’t have an account? &nbsp;
                     <label htmlFor="" className="signup__link">
-                      Sign up
+                      Signup
                     </label>
                   </span>
                 </Link>
