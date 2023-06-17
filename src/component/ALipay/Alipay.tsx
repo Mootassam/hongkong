@@ -6,7 +6,6 @@ import Number from "../../shared/Number";
 import Left from "../../shared/icons/Left";
 function Alipay(props) {
   const limit = Math.floor(Math.random() * (100 - 6 + 1)) + 6;
-
   return (
     <div className="app__alipay">
       <div className="alipay">
