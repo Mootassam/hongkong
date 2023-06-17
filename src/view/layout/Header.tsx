@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import { useDispatch, useSelector } from "react-redux";
 import authActions from "@modules/auth/authActions";
+import { i18n } from "../../i18n";
 
 function Header() {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ function Header() {
       <div className="style__header">
       <div></div>
       <div>
-        <span onClick={doSignout}> logout</span>
+        <span onClick={doSignout}> {i18n('common.logout')}</span>
       </div>
       </div>
     </div>

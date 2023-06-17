@@ -28,6 +28,7 @@ const fr = {
     writeamount:"写入量",
     tools:"工具",
     brushsize:"刷子大小",
+    logout:"登出"
   },
 
   app: {

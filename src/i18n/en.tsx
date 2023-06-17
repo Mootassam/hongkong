@@ -39,6 +39,7 @@ const en = {
     tools:"tools",
     brushsize:"Brush size",
     configurations: 'Configurations',
+    logout:"Logout"
   },
 
   app: {
