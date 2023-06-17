@@ -2433,6 +2433,8 @@ const en = {
 
   auth: {
     tenants: 'Workspaces',
+    singindesc:"Enter your email and password to sign in",
+    signupdesc :"Enter your email and password to sign up",
     profile: {
       title: 'Profile',
       success: 'Profile successfully updated',
