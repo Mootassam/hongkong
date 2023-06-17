@@ -2,6 +2,7 @@ import React from "react";
 import selectors from "@modules/auth/authSelectors";
 import actions from "@modules/auth/authActions";
 import { useDispatch, useSelector } from "react-redux";
+import { i18n } from "../../i18n";
 
 import './Styles/styles.css'
 
@@ -15,12 +16,12 @@ function EmptyPermissionsPage() {
   return (
     <div className="app__empty">
       <div className="no__permission">
+      {i18n('auth.emptyPermissions.message')}
 
-        You have no permissions yet. Wait for the admin to grant you privileges.
       </div>
 
       <button type="button" onClick={doSignout} className="signout">
-        Signout
+        {i18n('auth.signout')}
       </button>
     </div>
   );
