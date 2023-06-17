@@ -23,6 +23,11 @@ const fr = {
     select: '选择',
     continue: '继续',
     configurations: '配置',
+    selectbank:"选择银行",
+    selectsize:"选择大小",
+    writeamount:"写入量",
+    tools:"工具",
+    brushsize:"刷子大小",
   },
 
   app: {

@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./sidebar.css";
 import optionBank from "../../../data/OptionBank";
 import { FaEraser, FaUndo } from "react-icons/fa";
+import { i18n } from "../../../i18n";
+
 function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
   , undo,
   erase,
@@ -23,20 +25,20 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
     <div className="app__sidebar">
       <div className="sidebar__form">
         <div className="form__group">
-          <label htmlFor=""> Select bank</label>
+          <label htmlFor=""> {i18n('common.selectbank')}</label>
           <select
             name="bank"
             className="app__select"
             onChange={(e) => setvalue(e.target.value)}
           >
-            {optionBank.map((item) => (
-              <option value={item.value}>{item.name} </option>
+            {optionBank.map((item, index) => (
+              <option key={index} value={item.value}>{item.name} </option>
             ))}
           </select>
         </div>
         {value === "800" && (
           <div className="form__group">
-            <label htmlFor=""> Select Size</label>
+            <label htmlFor=""> {i18n('common.selectsize')}</label>
             <select
               name="bank"
               className="app__select"
@@ -48,7 +50,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           </div>
         )}
         <div className="form__group">
-          <label htmlFor=""> Write the Amount</label>
+          <label htmlFor=""> {i18n('common.writeamount')}</label>
           <input
             type="text"
             onChange={(e) => setAmount(e.target.value)}
@@ -56,7 +58,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           />
         </div>
         <div className="form__group">
-          <label htmlFor="">Tools</label>
+          <label htmlFor="">{i18n('common.tools')}</label>
           <div className="app__tools">
             <input type="color" value={color} onChange={changeColor} className="btn--color" />
             <button className="undo" onClick={undo}>
@@ -68,7 +70,7 @@ function Sidebar({ screenshot, value, setvalue, setAmount, setSize, size
           </div>
         </div>
         <div className="form__group">
-          <label htmlFor="">Brush Size</label>
+          <label htmlFor="">{i18n('common.brushsize')}</label>
           <input
             type="range"
             min="1"

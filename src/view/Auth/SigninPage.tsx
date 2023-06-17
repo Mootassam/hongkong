@@ -55,7 +55,7 @@ function SigninPage() {
       <div className="singin__page">
         <div className="singin__header">
           <h1>  {i18n('auth.signin')}</h1>
-          <span>Enter your email and password to sign in</span>
+          <span>{i18n('auth.singindesc')}</span>
         </div>
         <FormProvider {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>

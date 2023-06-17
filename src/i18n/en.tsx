@@ -32,6 +32,12 @@ const en = {
     news: 'News',
     membership: 'MemberShip',
     accounting: 'Accounting',
+
+    selectbank:"Select bank",
+    selectsize:"select size",
+    writeamount:"write amount",
+    tools:"tools",
+    brushsize:"Brush size",
     configurations: 'Configurations',
   },
 
