@@ -3,6 +3,9 @@ import selectors from "@modules/auth/authSelectors";
 import actions from "@modules/auth/authActions";
 import { useDispatch, useSelector } from "react-redux";
 
+import './Styles/styles.css'
+
+
 function EmptyPermissionsPage() {
   const dispatch = useDispatch();
 

@@ -227,3 +227,9 @@ flex-grow: 0;
     color: #009EF7 !important; 
     cursor: pointer;
 }
+
+.no__permission { 
+  font-family: 'inter';
+  font-weight: 500;
+  color: #222222 !important;
+}
